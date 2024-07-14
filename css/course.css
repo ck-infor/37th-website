@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #faebd7;
+}
+
+header {
+    background-color: #f8931d;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0; /* 確保圖片緊貼著上方的導航欄 */
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px 50px; /* 設置內邊距 */
+    width: calc(100% - 100px); /* 扣除左右邊距 */
+    box-sizing: border-box; /* 確保內邊距計算在內 */
+}
+
+.content .myimg {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+}
+
+.content div {
+    flex: 1;
+    padding: 10px;
+}
+
+.topic {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+.innerText {
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    margin: 20px;
+    padding: 10px 50px;
+    box-sizing: border-box; 
+}
+
+.highLight {
+    background-color: gold;
+    color: black;
+    padding: 5px; /* 增加內邊距以顯示背景顏色 */
+    display: inline-block; /* 確保背景顏色只影響文字部分 */
+}
