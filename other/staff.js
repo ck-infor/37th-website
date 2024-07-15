@@ -18,6 +18,7 @@ function start() {
         element.style.textAlign = "center";
         span.innerHTML = nameList[i];
         span.classList.add("highLight");
+        span.classList.add("hidden");
         span.style.backgroundColor = "gold";
         element.appendChild(span);
         target.appendChild(element);
@@ -26,13 +27,16 @@ function start() {
         container.classList.add("content");
         var text = document.createElement("div");
         var description = document.createElement("p");
-        text.innerHTML = descriptionList[i];
+        description.classList.add("paragraph");
+        description.classList.add("hidden");
+        description.innerHTML = descriptionList[i];
         text.appendChild(description);
 
         var photo = new Image();
         photo.src = "./photos/cccc.jpg";
         photo.alt = "社員照片"; 
-        photo.className = "myimg";
+        photo.classList.add("myimg");
+        photo.classList.add("hidden");
         photo.style.maxWidth = "50%";
         photo.style.height = "auto";
 
@@ -49,22 +53,45 @@ function start() {
 
         target.appendChild(container);
     }
+
+    var myInterval = setInterval(check(), 20);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    var elements = document.querySelectorAll(".clearfix");
-
-    elements.forEach((element) => {
-        element.addEventListener("mouseenter", () => {
-            console.log("hi");
-            var container = element.querySelector(".myimg");
-            console.log(container);
-            container.classList.add("slide-in");
-        });
-
-        element.addEventListener("mouseleave", () => {
-            var container = element.querySelector(".myimg");
-            container.classList.remove("slide-in");
-        });
+var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("slide-in");
+            entry.target.classList.remove("hidden");
+        }
     });
-});
+}, { threshold: 0.1 });
+
+function check() {
+    document.querySelectorAll('.myimg').forEach(function(img) {
+        observer.observe(img);
+    });
+    document.querySelectorAll('.paragraph').forEach(function(paragraph) {
+        observer.observe(paragraph);
+    });
+    document.querySelectorAll('.highLight').forEach(function(span) {
+        observer.observe(span);
+    });
+}
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     var elements = document.querySelectorAll(".clearfix");
+
+//     elements.forEach((element) => {
+//         element.addEventListener("mouseenter", () => {
+//             console.log("hi");
+//             var container = element.querySelector(".myimg");
+//             console.log(container);
+//             container.classList.add("slide-in");
+//         });
+
+//         element.addEventListener("mouseleave", () => {
+//             var container = element.querySelector(".myimg");
+//             container.classList.remove("slide-in");
+//         });
+//     });
+// });
