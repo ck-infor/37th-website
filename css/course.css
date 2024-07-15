@@ -66,7 +66,7 @@ main {
 }
 
 .innerText {
-    font-size: 14px;
+    font-size: 20px;
     color: black;
     text-align: center;
     margin: 20px;
@@ -74,9 +74,44 @@ main {
     box-sizing: border-box; 
 }
 
+.hidden {
+    opacity: 0;
+    transform: translateY((50%));
+}
+
+.slide-in {
+    animation: slide-in 1s ease-out;
+}
+
+.highLightOuter {
+    background-color: gold;
+    color: black;
+    padding: 5px; /* 增加內邊距以顯示背景顏色 */
+    display: inline-block; /* 確保背景顏色只影響文字部分 */
+}
+
 .highLight {
     background-color: gold;
     color: black;
     padding: 5px; /* 增加內邊距以顯示背景顏色 */
     display: inline-block; /* 確保背景顏色只影響文字部分 */
+}
+
+.container {
+    border: 4px solid white;
+    border-radius: 30px;
+    background-clip: padding-box;
+    max-width: 465px;
+    max-height: auto;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
