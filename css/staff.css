@@ -69,6 +69,15 @@ main {
     opacity: 0; */
 }
 
+.content .hidden {
+    opacity: 0;
+    transform: translateY(50%);
+}
+
+.content .slide-in {
+    animation: slide-in 1s ease-out;
+}
+
 /* .content:hover .myimg {
     transform: translateY(0);
     opacity: 1;
@@ -79,10 +88,18 @@ main {
     padding: 10px;
 }
 
-p {
-    font-size: 30px;
-    color: black;
-    text-align: center;
+.paragraph {
+    font-size: 14px;
+    color: black;;
+}
+
+.paragraph .hidden {
+    opacity: 0;
+    transform: translateY(50%);
+}
+
+.paragraph .slide-in {
+    animation: slide-in 1s ease-out;
 }
 
 .highLight {
@@ -94,8 +111,26 @@ p {
     font-size: 30px;
 }
 
+.highLight .hidden {
+    opacity: 0;
+    transform: translateY(50%);
+}
+
+.highLight .slide-in {
+    animation: slide-in 1s ease-out;
+}
+
 .clearfix {
     padding: auto;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50%);
+}
+
+.slide-in {
+    animation: slide-in 1s ease-out;
 }
 
 @keyframes slide-in {
