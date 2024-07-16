@@ -161,6 +161,22 @@ main {
     right: 5px;
 }
 
+.info-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #f8931d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.info-button:hover {
+    background-color: #e67e22;
+}
+
 @media (max-width: 1008px) and (min-width: 689px) {
     .lesson-card {
         width: 45%;
