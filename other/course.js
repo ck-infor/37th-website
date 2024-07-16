@@ -77,25 +77,30 @@ function start() {
     //     container.appendChild(text);
     //     paragraph.appendChild(container);
     // }
-    const boxMaxWidth = "465px";
+    var lessonList = document.createElement("div");
+    lessonList.id = "lessonList";
+    lessonList.classList.add("card-array");
 
+    const boxMaxWidth = "465px";
     for(var i = 0; i < week.length; i++) {
         var container = document.createElement("div");
-        container.classList.add("container");
+        container.classList.add("lesson-card");
 
         var topic = document.createElement("p");
         topic.classList.add("topic");
+        topic.classList.add("noMargin");
         var spans = document.createElement("span");
         spans.innerHTML = aftCourseList[i];
         spans.style.fontSize = "24px";
         spans.classList.add("highLight");
         spans.style.backgroundColor = "gold";
         topic.appendChild(spans);
-        container.appendChild(topic);
 
         var text = document.createElement("div");
+        text.classList.add("lesson-card-text");
         var description = document.createElement("p");
         description.innerHTML = aftCourseIntro[i]
+        text.appendChild(topic);
         text.appendChild(description);
 
         var photo = new Image();
