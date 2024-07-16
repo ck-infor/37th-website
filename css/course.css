@@ -65,6 +65,10 @@ main {
     text-align: center;
 }
 
+.noMargin {
+    margin: 0 0 0 0;
+}
+
 .innerText {
     font-size: 20px;
     color: black;
@@ -113,5 +117,58 @@ main {
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+/* lesson */
+.card-array {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lesson-card {
+    background: rgba(53, 74, 95, 1);
+    /* background記得改 */
+    height: 170px;
+    margin: 10px;
+    width: 30%;
+    min-width: 300px;
+    display: flex;
+    position: relative;
+    border-radius: .2em;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.lesson-card:hover {
+    background: rgba(53, 74, 95, 1);
+    /* background記得改 */
+    transform: scale(1.02);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s cubic-bezier(0,.59,.43,.99);
+}
+
+.lesson-card-text {
+    position: absolute;
+    top: 20px;
+    left: 85px;
+}
+
+.lesson-card-button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+@media (max-width: 1008px) and (min-width: 689px) {
+    .lesson-card {
+        width: 45%;
+    }
+} 
+
+@media (max-width: 688px) {
+    .lesson-card {
+        width: 95%;
     }
 }
