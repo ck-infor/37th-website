@@ -112,8 +112,9 @@ function start() {
         
         container.appendChild(photo);
         container.appendChild(text);
-        paragraph.appendChild(container);
+        lessonList.appendChild(container);
     }
+    paragraph.appendChild(lessonList);
 
     var myInterval = setInterval(check(), 20);
 }
