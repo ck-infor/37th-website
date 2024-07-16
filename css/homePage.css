@@ -60,3 +60,17 @@ main {
         opacity: 1;
     }
 }
+
+@media (max-width: 1008px) and (min-width: 689px) {
+    .logo-container img {
+        height: 100%;
+        width: auto;
+    }
+} 
+
+@media (max-width: 688px) {
+    .logo-container img {
+        width: 100%;
+        height: auto;
+    }
+}
