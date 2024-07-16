@@ -109,9 +109,15 @@ function start() {
         photo.className = "myimg";
         photo.style.maxWidth = boxMaxWidth;
         photo.style.maxHeight = "auto";
+
+        var button = document.createElement("button");
+        button.innerHTML = "更多資訊";
+        button.classList.add("info-button");
+        button.classList.add("lesson-card-button");
         
         container.appendChild(photo);
         container.appendChild(text);
+        container.appendChild(button);
         lessonList.appendChild(container);
     }
     paragraph.appendChild(lessonList);
