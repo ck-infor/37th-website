@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #faebd7;
 }
 
 header {
@@ -29,4 +29,81 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px 50px; /* 設置內邊距 */
+    width: calc(100% - 100px); /* 扣除左右邊距 */
+    box-sizing: border-box; /* 確保內邊距計算在內 */
+}
+
+.content .myimg {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+}
+
+.content div {
+    flex: 1;
+    padding: 10px;
+}
+
+.topic {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+.innerText {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin: 20px;
+    padding: 10px 50px;
+    box-sizing: border-box; 
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY((50%));
+}
+
+.slide-in {
+    animation: slide-in 1s ease-out;
+}
+
+.highLightOuter {
+    background-color: gold;
+    color: black;
+    padding: 5px; /* 增加內邊距以顯示背景顏色 */
+    display: inline-block; /* 確保背景顏色只影響文字部分 */
+}
+
+.highLight {
+    background-color: gold;
+    color: black;
+    padding: 5px; /* 增加內邊距以顯示背景顏色 */
+    display: inline-block; /* 確保背景顏色只影響文字部分 */
+}
+
+.container {
+    border: 4px solid white;
+    border-radius: 30px;
+    background-clip: padding-box;
+    max-width: 465px;
+    max-height: auto;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
