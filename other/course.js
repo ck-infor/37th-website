@@ -1,13 +1,14 @@
+var aftCourseList = ["星期一課程", "星期二課程", "星期三課程", "星期四課程", "星期五課程"];
+var week = ["星期一", "星期二", "星期三", "星期四", "星期五"];
+var aftCourseIntro = [
+    "這是星期一的課程", "這是星期二的課程", "這是星期三的課程", "這是星期四的課程", "這是星期五的課程"
+]
+var aftCoursePhotos = [
+    "./photos/Java_logo.png", "./photos/Java_logo.png", "./photos/Java_logo.png", 
+    "./photos/Java_logo.png", "./photos/Java_logo.png"
+]
+
 function start() {
-    var aftCourseList = ["星期一課程", "星期二課程", "星期三課程", "星期四課程", "星期五課程"];
-    var week = ["星期一", "星期二", "星期三", "星期四", "星期五"];
-    var aftCourseIntro = [
-        "這是星期一的課程", "這是星期二的課程", "這是星期三的課程", "這是星期四的課程", "這是星期五的課程"
-    ]
-    var aftCoursePhotos = [
-        "./photos/Java_logo.png", "./photos/Java_logo.png", "./photos/Java_logo.png", 
-        "./photos/Java_logo.png", "./photos/Java_logo.png"
-    ]
 
     var paragraph = document.getElementById("paragraph");
     var course = document.createElement("p");
@@ -77,50 +78,66 @@ function start() {
     //     container.appendChild(text);
     //     paragraph.appendChild(container);
     // }
-    var lessonList = document.createElement("div");
-    lessonList.id = "lessonList";
-    lessonList.classList.add("card-array");
+    // var lessonList = document.createElement("div");
+    // lessonList.id = "lessonList";
+    // lessonList.classList.add("card-array");
 
-    const boxMaxWidth = "465px";
-    for(var i = 0; i < week.length; i++) {
-        var container = document.createElement("div");
-        container.classList.add("lesson-card");
+    // const boxMaxWidth = "465px";
+    // for(var i = 0; i < week.length; i++) {
+    //     var container = document.createElement("div");
+    //     container.classList.add("lesson-card");
 
-        var topic = document.createElement("p");
-        topic.classList.add("topic");
-        topic.classList.add("noMargin");
-        var spans = document.createElement("span");
-        spans.innerHTML = aftCourseList[i];
-        spans.style.fontSize = "24px";
-        spans.classList.add("highLight");
-        spans.style.backgroundColor = "gold";
-        topic.appendChild(spans);
+    //     var topic = document.createElement("p");
+    //     topic.classList.add("topic");
+    //     topic.classList.add("noMargin");
+    //     var spans = document.createElement("span");
+    //     spans.innerHTML = aftCourseList[i];
+    //     spans.style.fontSize = "24px";
+    //     spans.classList.add("highLight");
+    //     spans.style.backgroundColor = "gold";
+    //     topic.appendChild(spans);
 
-        var text = document.createElement("div");
-        text.classList.add("lesson-card-text");
-        var description = document.createElement("p");
-        description.innerHTML = aftCourseIntro[i]
-        text.appendChild(topic);
-        text.appendChild(description);
+    //     var text = document.createElement("div");
+    //     text.classList.add("lesson-card-text");
+    //     var description = document.createElement("p");
+    //     description.innerHTML = aftCourseIntro[i]
+    //     text.appendChild(topic);
+    //     text.appendChild(description);
 
-        var photo = new Image();
-        photo.src = aftCoursePhotos[i];
-        photo.alt = "課程照片"; 
-        photo.className = "myimg";
-        photo.style.maxWidth = boxMaxWidth;
-        photo.style.maxHeight = "auto";
+    //     var photo = new Image();
+    //     photo.src = aftCoursePhotos[i];
+    //     photo.alt = "課程照片"; 
+    //     photo.className = "myimg";
+    //     photo.style.maxWidth = boxMaxWidth;
+    //     photo.style.maxHeight = "auto";
 
-        var button = document.createElement("button");
-        button.innerHTML = "更多資訊";
-        button.classList.add("info-button");
-        button.classList.add("lesson-card-button");
-        
-        container.appendChild(photo);
-        container.appendChild(text);
-        container.appendChild(button);
-        lessonList.appendChild(container);
-    }
-    paragraph.appendChild(lessonList);
+    //     var button = document.createElement("input");
+    //     button.type = "button";
+    //     button.value = "更多資訊";
+    //     button.id = "button" + i;
+    //     button.classList.add("info-button");
+    //     button.classList.add("lesson-card-button");
+    //     if(i == 0) {
+    //         button.addEventListener("click", console.log("hi"));
+    //     }
+    //     else if(i == 1) {
+    //         button.onclick = tuesday();
+    //     }
+    //     else if(i == 2) {
+    //         button.onclick = wednesday();
+    //     }
+    //     else if(i == 3) {
+    //         button.onclick = thursday();
+    //     }
+    //     else {
+    //         button.onclick = friday();
+    //     }
+    //     container.appendChild(photo);
+    //     container.appendChild(text);
+    //     container.appendChild(button);
+    //     lessonList.appendChild(container);
+    // }
+    // paragraph.appendChild(lessonList);
 
     var myInterval = setInterval(check(), 20);
 }
@@ -141,4 +158,25 @@ function check() {
     document.querySelectorAll('.highLightOuter').forEach(function(span) {
         observer.observe(span);
     });
+}
+
+function newMessageBox(id) {
+    console.log(id);
+    $.MessageBox({
+        buttonDone : {
+            closeBtn : {
+                text : "了解！",
+                keyCode : 13,
+                customClass : "msgBtn"
+            }
+        },
+        title : {
+            myTitle : {
+                text : aftCourseList[id],
+                customClass : "msgTitle"
+            }
+        },
+        message : "<img src=\">" + aftCoursePhotos[id] + "\" class=\"msgPhoto\"><p class=\"msgText\">" + aftCourseIntro[id] + "</p>",
+        customClass : "msgBox"
+    }) 
 }
