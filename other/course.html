@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>infor 37th</title>
-    <link rel="stylesheet" href="../css/messagebox.min.css">
+    <link rel="stylesheet" href="./../css/messagebox.css">
     <link rel="stylesheet" href="../css/course.css">
 </head>
 <body onload="start()">
@@ -21,7 +21,7 @@
     </header>
     <div id="paragraph"></div>
     <div id="lessonList" class="card-array">
-        <div class="lesson-card">
+        <div class="lesson-card hidden">
             <img src="./photos/Java_logo.png" alt="課程照片" class="myimg" style="max-width: 465px;">
             <div class="lesson-card-text">
                 <p class="topic noMargin">
@@ -31,7 +31,7 @@
             </div>
             <input type="button" value="更多資訊" id="button0" class="info-button lesson-card-button" onclick="newMessageBox(0)">
         </div>
-        <div class="lesson-card">
+        <div class="lesson-card hidden">
             <img src="./photos/Java_logo.png" alt="課程照片" class="myimg" style="max-width: 465px;">
             <div class="lesson-card-text">
                 <p class="topic noMargin">
@@ -41,7 +41,7 @@
             </div>
             <input type="button" value="更多資訊" id="button1" class="info-button lesson-card-button" onclick="newMessageBox(1)">
         </div>
-        <div class="lesson-card">
+        <div class="lesson-card hidden">
             <img src="./photos/Java_logo.png" alt="課程照片" class="myimg" style="max-width: 465px;">
             <div class="lesson-card-text">
                 <p class="topic noMargin">
@@ -51,7 +51,7 @@
             </div>
             <input type="button" value="更多資訊" id="button2" class="info-button lesson-card-button" onclick="newMessageBox(2)">
         </div>
-        <div class="lesson-card">
+        <div class="lesson-card hidden">
             <img src="./photos/Java_logo.png" alt="課程照片" class="myimg" style="max-width: 465px;"><div class="lesson-card-text">
                 <p class="topic noMargin">
                     <span class="highLight" style="font-size: 24px; background-color: gold;">星期四課程</span>
@@ -60,7 +60,7 @@
             </div>
             <input type="button" value="更多資訊" id="button3" class="info-button lesson-card-button" onclick="newMessageBox(3)">
         </div>
-        <div class="lesson-card">
+        <div class="lesson-card hidden">
             <img src="./photos/Java_logo.png" alt="課程照片" class="myimg" style="max-width: 465px;">
             <div class="lesson-card-text">
                 <p class="topic noMargin">
@@ -71,7 +71,8 @@
             <input type="button" value="更多資訊" id="button4" class="info-button lesson-card-button" onclick="newMessageBox(4)">
         </div>
     </div>
-    <script src="./messagebox.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./messagebox.js"></script>
     <script src="./course.js"></script>
 </body>
 </html>
