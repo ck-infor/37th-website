@@ -1,4 +1,3 @@
-var myInterval;
 //接受三個參數，文字、位置(id)、間隔(毫秒)
 function typeWriter(text, targetArea, milisecond) {
     var paragraph = document.getElementById(targetArea);
@@ -38,5 +37,5 @@ function typeWriter(text, targetArea, milisecond) {
             clearInterval(myInterval);
         }
     }
-    myInterval = setInterval(type, Number(milisecond));
+    var myInterval = setInterval(type, Number(milisecond));
 }
