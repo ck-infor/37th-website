@@ -30,3 +30,23 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+.hidden {
+    opacity: 0;
+    transform: translateY((50%));
+}
+
+.slide-in {
+    animation: slide-in 1s ease-out;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
