@@ -158,6 +158,9 @@ function check() {
     document.querySelectorAll('.highLightOuter').forEach(function(span) {
         observer.observe(span);
     });
+    document.querySelectorAll(".lesson-card").forEach(function(card) {
+        observer.observe(card);
+    })
 }
 
 function newMessageBox(id) {
@@ -173,10 +176,12 @@ function newMessageBox(id) {
         title : {
             myTitle : {
                 text : aftCourseList[id],
+                // text : "hello",
                 customClass : "msgTitle"
             }
         },
-        message : "<img src=\">" + aftCoursePhotos[id] + "\" class=\"msgPhoto\"><p class=\"msgText\">" + aftCourseIntro[id] + "</p>",
-        customClass : "msgBox"
+        message : "<img src=\"" + aftCoursePhotos[id] + "\" class=\"msgPhoto\"><p class=\"msgText\">" + aftCourseIntro[id] + "</p>",
+        customClass : "msgBox",
+        top : "auto"
     }) 
 }
