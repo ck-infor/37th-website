@@ -40,6 +40,19 @@ nav ul li a:hover {
     box-sizing: border-box; 
 }
 
+.topic {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+.highLight {
+    background-color: gold;
+    color: black;
+    padding: 5px; /* 增加內邊距以顯示背景顏色 */
+    display: inline-block; /* 確保背景顏色只影響文字部分 */
+}
+
 .hidden {
     opacity: 0;
     transform: translateY((50%));
