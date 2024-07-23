@@ -18,9 +18,19 @@ function start() {
     intro.appendChild(introText);
 
     var izcc = document.createElement("div");
+    var izccTopic = document.createElement("p");
+    izccTopic.classList.add("topic");
+    var izccSpan = document.createElement("span");
+    izccSpan.innerHTML = "IZCC";
+    izccSpan.classList.add("highLight");
+    izccSpan.classList.add("hidden");
+    izccSpan.style.backgroundColor = "gold";
+    izccTopic.appendChild(izccSpan);
+
     var izccText = document.createElement("p");
     izccText.id = "izccText";
     izccText.classList.add("innerText");
+    izcc.appendChild(izccTopic);
     izcc.appendChild(izccText);
 
     paragraph.appendChild(intro);
