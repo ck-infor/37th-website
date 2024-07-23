@@ -1,19 +1,31 @@
 //接受三個參數，文字、位置(id)、間隔(毫秒)
 function typeWriter(text, targetArea, milisecond) {
     var paragraph = document.getElementById(targetArea);
+    var span = document.createElement("span");
+    var spanHidden = document.createElement("span");
+    spanHidden.style.visibility = "hidden";
     var context = String(text);
     var index = 0;
     var type = function() {
         if(context.length > index) {
-            var myText = "";
-            for(var i = 0; i <= index; i++) {
-                myText = myText + context.charAt(i);
+            var spanText = "";
+            var hiddenText = "";
+            for(var i = 0; i < context.length; i++) {
+                if(i <= index) {
+                    spanText = spanText + context.charAt(i);
+                }
+                else {
+                    hiddenText = hiddenText + context.charAt(i);
+                }
             }
             if(index != context.length - 1) {
-                myText = myText + "|";
+                spanText = spanText + "|";
             }
             index += 1;
-            paragraph.innerHTML = myText;
+            span.innerHTML = spanText;
+            spanHidden.innerHTML = hiddenText;
+            paragraph.appendChild(span);
+            paragraph.appendChild(spanHidden);
         }
         else if(context.length == index) {
             var times = 1;
