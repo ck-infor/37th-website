@@ -53,10 +53,11 @@ main {
 
 .content {
     display: flex;
+    /* text-align: center; */
     align-items: center;
     margin: 20px 0;
     padding: 10px 50px; /* 設置內邊距 */
-    width: calc(100% - 100px); /* 扣除左右邊距 */
+    /* width: calc(100% - 100px); 扣除左右邊距 */
     box-sizing: border-box; /* 確保內邊距計算在內 */
 }
 
@@ -141,5 +142,17 @@ main {
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+/* 
+@media (max-width: 1008px) and (min-width: 689px) {
+    .ri {
+        width: 50%;
+    }
+}  */
+
+@media (max-width: 688px) {
+    .content .myimg {
+        max-width: 100%;
     }
 }
