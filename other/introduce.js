@@ -41,7 +41,6 @@ function start() {
 
 var observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
-        console.log(entry.target);
         if (entry.isIntersecting) {
             if(entry.target.id == "IntroText") {
                 if(entry.target.className.search("runed") == -1) {
