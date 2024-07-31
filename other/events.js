@@ -11,7 +11,7 @@ function start() {
     for(var i = 0; i < topicList.length; i++) {
         var container = document.createElement("div");
         container.classList.add("container");
-        // container.classList.add("hidden");
+        container.classList.add("hidden");
         
         var topic = document.createElement("p");
         topic.classList.add("topic");
@@ -74,9 +74,9 @@ var observer = new IntersectionObserver(function(entries) {
 }, { threshold: 0.1 });
 
 function check() {
-    // document.querySelectorAll('.container').forEach(function(paragraph) {
-    //     observer.observe(paragraph);
-    // });
+    document.querySelectorAll('.container').forEach(function(paragraph) {
+        observer.observe(paragraph);
+    });
     document.querySelectorAll(".innerText").forEach(function(text) {
         observer.observe(text);
     });
