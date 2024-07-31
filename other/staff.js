@@ -6,7 +6,7 @@ function start() {
     ];
 
     var descriptionList = [
-        "哈囉", "hi", "e", "eji", "jkv", "d", "d", "e", "ef", "jvl"
+        "123334394849548504t<br></br>8940gjkfj9850438260986025396823058432-59820540", "123334394849548504t8940gjkfj98504382609860253968230jiou4iu0394u5803u4 8ufi disukljfk58432-59820540", "e", "eji", "jkv", "d", "d", "e", "ef", "jvl"
     ]
     
     for (var i = 0; i < nameList.length; i++) {
@@ -37,16 +37,12 @@ function start() {
         photo.alt = "社員照片"; 
         photo.classList.add("myimg");
         photo.classList.add("hidden");
-        photo.style.maxWidth = "50%";
-        photo.style.height = "auto";
 
         if (i % 2 == 0) {
-            photo.classList.add("left");
             container.appendChild(photo);
             container.appendChild(text);
         } 
         else {
-            photo.classList.add("right");
             container.appendChild(text);
             container.appendChild(photo);
         }
