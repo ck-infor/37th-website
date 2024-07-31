@@ -31,7 +31,11 @@ function typeWriter(text, targetArea, milisecond) {
             var times = 1;
             var lastAppear = setInterval(() => {
                 if(times % 2 == 0) {
+                    var spaceSpan = document.createElement("span");
+                    spaceSpan.innerHTML = "|";
+                    spaceSpan.style.visibility = "hidden";
                     paragraph.innerHTML = context;
+                    paragraph.appendChild(spaceSpan);
                 }
                 else {
                     paragraph.innerHTML = context + "|";
@@ -41,7 +45,11 @@ function typeWriter(text, targetArea, milisecond) {
             var timer = setInterval(() => {
                 clearInterval(timer);
                 clearInterval(lastAppear);
+                // var spaceSpan = document.createElement("span");
+                // spaceSpan.innerHTML = "|";
+                // spaceSpan.style.visibility = "hidden";
                 paragraph.innerHTML = context;
+                // paragraph.appendChild(spaceSpan);
             }, 5000);
             index += 1;
         }
