@@ -90,11 +90,16 @@ nav ul li a:hover {
 }
 
 .container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     border: 4px solid white;
     border-radius: 30px;
     background-clip: padding-box;
-    max-width: 465px;
+    max-width: 600px;
     max-height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 @keyframes slide-in {
