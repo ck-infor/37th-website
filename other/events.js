@@ -46,13 +46,42 @@ function start() {
         var sign = document.createElement("p");
         sign.classList.add("innerText");
         if(signList[i].search("^http") == -1) {
-            sign.innerHTML = signList[i];
+            if(signList[i].search("^活動已結束$") == 0) {
+                var span = document.createElement("span");
+                span.classList.add("highLight");
+                span.style.backgroundColor = "red";
+                span.style.color = "white";
+                span.innerHTML = signList[i];
+                sign.appendChild(span);
+            }
+            else if(signList[i].search("^報名已結束$") == 0) {
+                var span = document.createElement("span");
+                span.classList.add("highLight");
+                span.style.backgroundColor = "red";
+                span.style.color = "white";
+                span.innerHTML = signList[i];
+                sign.appendChild(span);
+            }
+            else {
+                var span = document.createElement("span");
+                span.classList.add("highLight");
+                span.style.backgroundColor = "blue";
+                span.style.color = "white";
+                span.innerHTML = signList[i];
+                sign.appendChild(span);
+            }
         }
         else {
+            var span = document.createElement("span");
+            span.classList.add("highLight");
+            span.style.backgroundColor = "orange";
+            span.style.color = "white";
             var link = document.createElement("a");
+            link.innerHTML = "點我前往報名";
             link.href = signList[i];
             link.classList.add("link");
-            sign.appendChild(link);
+            span.appendChild(link);
+            sign.appendChild(span);
         }
         container.appendChild(sign);
 
