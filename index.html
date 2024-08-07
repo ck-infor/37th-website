@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>infor 37th</title>
     <link rel="stylesheet" href="css/homePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="computerNav">
             <ul>
                 <li><a href="./other/events.html">活動資訊</a></li>
                 <li><a href="./other/introduce.html">社團介紹</a></li>
@@ -17,11 +18,35 @@
                 <li><a href="./other/course.html">課程內容</a></li>
             </ul>
         </nav>
+        <div class="topnav">
+            <a href="#home" class="active">INFOR 37th</a>
+            <div id="myLinks">
+              <a href="./other/events.html">活動資訊</a>
+              <a href="./other/introduce.html">社團介紹</a>
+              <a href="./other/staff.html">幹部簡介</a>
+              <a href="./other/question.html">FAQ</a>
+              <a href="./other/course.html">課程內容</a>
+            </div>
+            <a class="icon" onclick="menu()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
     <main>
         <div class="logo-container">
             <img src="./other/photos/infor.png" alt="社團 Logo">
         </div>
     </main>
+    <script>
+        function menu() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } 
+            else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
