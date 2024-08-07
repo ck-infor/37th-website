@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>infor 37th</title>
     <link rel="stylesheet" href="../css/question.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="computerNav">
             <ul>
                 <li><a href="../index.html">首頁</a></li>
                 <li><a href="events.html">活動資訊</a></li>
@@ -17,7 +18,20 @@
                 <li><a href="course.html">課程內容</a></li>
             </ul>
         </nav>
+        <div class="topnav">
+            <a class="active">INFOR 37th</a>
+            <div id="myLinks">
+                <a href="../index.html">首頁</a>
+                <a href="events.html">活動資訊</a>
+                <a href="introduce.html">社團介紹</a>
+                <a href="staff.html">幹部簡介</a>
+                <a href="course.html">課程內容</a>
+            </div>
+            <a class="icon" onclick="menu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
-
+    <script src="./question.js"></script>
 </body>
 </html>
