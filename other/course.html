@@ -6,10 +6,11 @@
     <title>infor 37th</title>
     <link rel="stylesheet" href="./../css/messagebox.css">
     <link rel="stylesheet" href="../css/course.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body onload="start()">
     <header>
-        <nav>
+        <nav class="computerNav">
             <ul>
                 <li><a href="../index.html">首頁</a></li>
                 <li><a href="events.html">活動資訊</a></li>
@@ -18,6 +19,19 @@
                 <li><a href="question.html">FAQ</a></li>
             </ul>
         </nav>
+        <div class="topnav">
+            <a class="active">INFOR 37th</a>
+            <div id="myLinks">
+                <a href="../index.html">首頁</a>
+                <a href="events.html">活動資訊</a>
+                <a href="introduce.html">社團介紹</a>
+                <a href="staff.html">幹部簡介</a>
+                <a href="question.html">FAQ</a>
+            </div>
+            <a class="icon" onclick="menu()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
     <div id="paragraph"></div>
     <div id="lessonList" class="card-array">
