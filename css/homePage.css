@@ -6,6 +6,7 @@ body {
 
 header {
     background-color: #000000;
+    padding: 1rem 0;
 }
 
 .computerNav {
@@ -121,5 +122,8 @@ main {
     }
     .topnav {
         display: inline;
+    }
+    header {
+        padding: 0;
     }
 }
