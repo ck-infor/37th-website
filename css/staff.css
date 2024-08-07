@@ -125,6 +125,11 @@ main {
     padding: auto;
 }
 
+.textContainer {
+    text-align: left;
+    max-width: 100%;
+}
+
 .hidden {
     opacity: 0;
     transform: translateY(50%);
@@ -154,5 +159,12 @@ main {
 @media (max-width: 688px) {
     .content .myimg {
         max-width: 100%;
+        order: 1;
+    }
+    .content {
+        flex-flow: column;
+    }
+    .content .textContainer {
+        order: 2;
     }
 }
