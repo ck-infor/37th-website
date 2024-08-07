@@ -26,6 +26,7 @@ function start() {
         var container = document.createElement("div");
         container.classList.add("content");
         var text = document.createElement("div");
+        text.classList.add("textContainer");
         var description = document.createElement("p");
         description.classList.add("paragraph");
         description.classList.add("hidden");
