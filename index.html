@@ -33,20 +33,19 @@
         </div>
     </header>
     <main>
-        <div class="logo-container">
-            <img src="./other/photos/infor.png" alt="社團 Logo">
-        </div>
+        <div class="gallery">
+            <div class="image-slider">
+                <img src="./other/photos/homePage/IMG_1847.jpg" alt="first photo" data-index="0"/>
+                <img src="./other/photos/homePage/實驗照片.PNG" alt="second photo" data-index="1"/>
+                <img src="./other/photos/homePage/歐拉公式.PNG" alt="third photo" data-index="2"/>
+            </div>
+            <div class="indicators">
+                <div class="indicator Active"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+            </div>
+          </div>
     </main>
-    <script>
-        function menu() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } 
-            else {
-                x.style.display = "block";
-            }
-        }
-    </script>
+    <script src="./other/homePage.js"></script>
 </body>
 </html>
