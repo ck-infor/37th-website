@@ -1,7 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #000000;
+    background-image: url(./../other/photos/infor.png);
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -88,6 +101,50 @@ main {
     width: 100%; /* 固定寬度確保logo大小合適 */
     height: auto;
     animation: slide-in 1s ease-out; /* 應用動畫 */
+}
+
+.gallery {
+    height: 450px;
+    width: 800px;
+    position: relative;
+}
+  
+.image-slider {
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+}
+  
+img {
+    width: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+}
+  
+.indicators {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+}
+  
+.indicator {
+    border-radius: 50%;
+    background-color: lightgray;
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+}
+  
+.Active {
+    background: #ffffff;
+    height: 16px;
+    width: 16px;
 }
 
 /* 定義動畫 */
