@@ -15,6 +15,8 @@ indicators.forEach((element, index) => {
 });
 
 const gallery = document.querySelector(".gallery");
+const galleryWidth = 800;
+const galleyHeight = 450;
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -67,6 +69,10 @@ var nextPhoto = {
 }
 
 nextPhoto.reset();
+if(window.screen.availWidth < galleryWidth) {
+    gallery.style.width = "80%";
+    gallery.style.height = "auto";
+}
 
 function menu() {
     var x = document.getElementById("myLinks");
