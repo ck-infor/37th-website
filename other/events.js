@@ -11,8 +11,8 @@ function start() {
     var target = document.getElementById("event");
     var topicList = ["茶會", "暑訓", "迎新", "秋遊", "社慶", "耶誕晚會", "寒訓", "春遊"];
     var timeList = ["2023.7.8 ~ 2023.7.9", "2024.8.5 ~ 2024.8.11", "尚未決定", "尚未決定", "尚未決定", "尚未決定", "尚未決定", "尚未決定"];
-    var photoList = ["./photos/teaparty.jpg", ""];
-    var signList = ["活動已結束", "報名已結束", "尚未開放報名", "尚未開放報名", "尚未開放報名", "尚未開放報名", "尚未開放報名", "尚未開放報名"]
+    var photoList = ["./photos/teaparty.jpg", "./photos/summerCamp.jpg", "./photos/welcome.jpg", "./photos/fall.jpg", "./photos/party.jpg", "./photos/christmas.jpg", "./photos/winter.jpg", "./photos/spring.jpg"];
+    var signList = ["活動已結束", "活動已結束", "尚未開放報名", "尚未開放報名", "尚未開放報名", "尚未開放報名", "尚未開放報名", "尚未開放報名"]
 
     for(var i = 0; i < topicList.length; i++) {
         var container = document.createElement("div");
