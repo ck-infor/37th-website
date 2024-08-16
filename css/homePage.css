@@ -56,6 +56,16 @@ header {
     display: flex;
 }
 
+.logoImg {
+    padding-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    padding-top: 20px;
+    width: 170px;
+    height: 70px;
+    display: flex;
+}
+
 .title1{
     color: white;
     font-family: "JetBrains Mono", monospace;
@@ -64,6 +74,21 @@ header {
     font-style: normal;
     margin-top: 37px;
     margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: auto;
+    font-size: 100%;
+    line-height: 50%;
+    display: flex;
+}
+
+.title1Mobile {
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: 20px;
     margin-right: auto;
     font-size: 100%;
@@ -84,6 +109,22 @@ header {
     font-style: normal;
     margin-top: 20px;
     margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: auto;
+    font-size: 65%;
+    line-height: 50%;
+    letter-spacing: 1px;
+    display: flex;
+}
+
+.title2Mobile {
+    color: white;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 5px;
+    margin-bottom: 0px;
     margin-left: 20px;
     margin-right: auto;
     font-size: 65%;
@@ -292,6 +333,9 @@ img {
     .logo-container img {
         width: 100%;
         height: auto;
+    }
+    .homepage_title {
+        display: none;
     }
     .computerNav {
         display: none;
