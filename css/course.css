@@ -57,9 +57,9 @@ nav ul li a:hover {
 .topnav a.icon {
     background: black;
     display: block;
-    position: absolute;
+    /* position: absolute;
     right: 0;
-    top: 0;
+    top: 0; */
 }
   
 .topnav #myLinks a:hover {
@@ -68,7 +68,7 @@ nav ul li a:hover {
 }
   
 .active {
-    background-color: #04AA6D;
+    background-color: #00f99e;
     color: white;
 }
 

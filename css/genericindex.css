@@ -24,6 +24,7 @@ body {
     align-items: center;
 }
 
+
 .cktile{
     border-bottom: rgb(255, 255, 255) 10px solid;
 }
@@ -31,6 +32,9 @@ body {
 header {
     background-color: #000000;
     padding: 0;
+}
+header a{
+    text-decoration-line: none;
 }
 
 .computerNav {
@@ -50,7 +54,6 @@ header {
     padding-left: 30px;
     margin-bottom: 10px;
     margin-top: 15px;
-    padding-top: 20px;
     width: 170px;
     height: 70px;
     display: flex;
@@ -92,8 +95,19 @@ header {
     display: flex;
 }
 
-.clubsign img{
-    margin: 50px;
+img {
+    width: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+}
+
+.clubsign   {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    width: 170px;
+    height: 70px;
+    display: flex;
     height: 92px;
     width: 400px;
 }
@@ -107,19 +121,23 @@ header {
     background-color: black ;
     color: white;
     border: none;
+    margin-top: 35px;
     text-align: center;
     border-radius: 17px;
     font-size: 20px;
-    padding: auto 10px 10px auto;
+    padding:  20px 7px;
     height: 25px;
     width: 25px;
     padding-right: 10px;
+    text-decoration: none;
+    margin-top: 37px;
 }
 
 .computerNav a:hover{
     font-family: "Noto Sans TC", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
+    margin-top: 35px;
     font-style: normal;
     transition: 0.15s;
     background-color: white;
@@ -128,9 +146,10 @@ header {
     text-align: center;
     border-radius: 17px;
     font-size: 20px;
-    padding: 20px 40px; 
+    padding: 20px 30px; 
     height: 25px;
     width: 25px;    
+    text-decoration: none;
 }
 
 img{
@@ -155,7 +174,6 @@ nav ul li {
 
 nav ul li a {
     color: white;
-    text-decoration: none;
     font-size: 1.2rem;
 }
 
@@ -202,6 +220,7 @@ nav ul li a:hover {
 .active {
     background-color: #000000;
     color: white;
+    display: block;
 }
 
 main {
@@ -264,6 +283,26 @@ img {
     background: #ffffff;
     height: 16px;
     width: 16px;
+}
+
+.computerNav div{
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    margin-top: 35px;
+    font-style: normal;
+    transition: 0.15s;
+    background-color: white;
+    color: black;
+    border: none;
+    text-align: center;
+    border-radius: 17px;
+    font-size: 20px;
+    padding: 20px 30px; 
+    height: 25px;
+    width: 25px;    
+    text-decoration: none;
+    display: inline;
 }
 
 /* 定義動畫 */

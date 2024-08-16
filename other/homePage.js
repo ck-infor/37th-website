@@ -5,7 +5,8 @@ var pointerBack = 0;
 
 indicators.forEach((element, index) => {
     element.addEventListener("click", () => {
-        images[index + 1].scrollIntoView({
+        console.log(index);
+        images[index].scrollIntoView({
             block: "center",
             behavior: "smooth",
         });
@@ -19,13 +20,11 @@ const galleyHeight = 450;
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if(entry.target.className == "clubsign") {
-            return;
-        }
         const targetIndex = entry.target.dataset.index;
         if (entry.isIntersecting) {
             indicators[targetIndex].classList.add("Active");
             pointer = targetIndex;
+            console.log(pointer);
         } 
         else {
             indicators[targetIndex].classList.remove("Active");
@@ -52,9 +51,10 @@ var nextPhoto = {
         }, 500);
         this.nextInterval = setInterval(() => {
             if(pointerBack == pointer) {
-                var index = Number(pointer) + 2;
-                if(index >= 4) {
-                    index = 1;
+                var index = Number(pointer) + 1;
+                console.log("index:", index);
+                if(index >= 3) {
+                    index = 0;
                 }
                 images[index].scrollIntoView({
                     block: "center",
