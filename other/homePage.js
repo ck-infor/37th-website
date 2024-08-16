@@ -19,10 +19,11 @@ const galleyHeight = 450;
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if(entry.target.className == "clubsign") {
+        if(entry.target.className.search("clubsign") != -1) {
             return;
         }
         const targetIndex = entry.target.dataset.index;
+        console.log(targetIndex);
         if (entry.isIntersecting) {
             indicators[targetIndex].classList.add("Active");
             pointer = targetIndex;
@@ -52,9 +53,10 @@ var nextPhoto = {
         }, 500);
         this.nextInterval = setInterval(() => {
             if(pointerBack == pointer) {
-                var index = Number(pointer) + 2;
-                if(index >= 4) {
-                    index = 1;
+                var index = Number(pointer) + images.length - 2;
+                console.log(index);
+                if(index >= images.length) {
+                    index = images.length - 3;
                 }
                 images[index].scrollIntoView({
                     block: "center",
@@ -65,7 +67,8 @@ var nextPhoto = {
         }, 5000);
     },
     pointerInterval : null,
-    nextInterval : null
+    nextInterval : null,
+    resetInterval : null
 }
 
 nextPhoto.reset();
@@ -78,8 +81,13 @@ function menu() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
         x.style.display = "none";
+        clearInterval(nextPhoto.resetInterval);
+        nextPhoto.resetInterval = null;
     } 
     else {
         x.style.display = "block";
+        nextPhoto.resetInterval = setInterval(() => {
+            nextPhoto.reset;
+        }, 500);
     }
 }
