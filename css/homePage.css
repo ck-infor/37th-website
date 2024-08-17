@@ -354,6 +354,7 @@ footer img{
     bottom: 0px;
     height: 70px;
     width: 100%;
+    display: flex;
 }
 
 .bottom_footer img{
@@ -361,7 +362,23 @@ footer img{
     margin-left: 80px;
     width: 30px;
     height: 30px;
-    display: block;
+    display: flex;
+    flex-direction: row;
+}
+
+.at{
+    color:white;
+    font-family: "JetBrains Mono", "Noto Sans TC", sans-serif, monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 120%;
+    font-style: normal;
+    display: flex;
+    text-decoration-line: none;
+    flex-direction: row ;
+    margin-top: 22px;
+    text-align: center;
+    margin-left: 20px;
 }
 
 /* 定義動畫 */
