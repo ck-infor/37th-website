@@ -102,11 +102,6 @@ header {
     display: flex;
 }
 
-.sorry{
-    color: white;
-    text-align: center;
-}
-
 .title2Mobile {
     color: white;
     font-family: "Noto Sans TC", sans-serif;
@@ -286,6 +281,71 @@ main {
     background: #ffffff;
     height: 16px;
     width: 16px;
+}
+
+footer{
+    background-color:rgb(36, 35, 35) ;
+    height:200px;
+    width:auto;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right:0px;
+}
+
+.footer_container{
+    display: flex;
+}
+
+.freind_club_topic{
+    margin-bottom: 20px;
+    color:white;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 130%;
+    font-style: normal;
+}
+
+footer ul{
+    list-style: none;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    color:white;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 100%;
+    font-style: normal;
+    display: inline;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: auto;
+    height: auto;
+    text-wrap: nowrap;
+    margin-bottom: 30px;
+}
+
+.freind_club{
+    margin-top: 15px;
+    color:white;
+    font-family: "JetBrains Mono", "Noto Sans TC", sans-serif, monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 90%;
+    font-style: normal;
+    display: block;
+    flex-direction: column;
+    text-decoration-line: none;
+}
+
+footer img{
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 40px;
+    display: flex;
+    margin-bottom: 30px;
 }
 
 /* 定義動畫 */
