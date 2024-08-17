@@ -1,11 +1,11 @@
 const indicators = document.querySelectorAll(".indicator");
-const images = document.querySelectorAll("img");
+const images = document.querySelectorAll(".image-slider img");
 var pointer = 0;
 var pointerBack = 0;
 
 indicators.forEach((element, index) => {
     element.addEventListener("click", () => {
-        images[index + 1].scrollIntoView({
+        images[index].scrollIntoView({
             block: "center",
             behavior: "smooth",
         });
@@ -19,9 +19,6 @@ const galleyHeight = 450;
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if(entry.target.className.search("clubsign") != -1) {
-            return;
-        }
         const targetIndex = entry.target.dataset.index;
         console.log(targetIndex);
         if (entry.isIntersecting) {
@@ -52,11 +49,11 @@ var nextPhoto = {
             pointerBack = pointer;
         }, 500);
         this.nextInterval = setInterval(() => {
-            if(pointerBack == pointer) {
-                var index = Number(pointer) + images.length - 2;
+            if((pointerBack == pointer) && (this.checker)) {
+                var index = Number(pointer) + 1;
                 console.log(index);
-                if(index >= images.length) {
-                    index = images.length - 3;
+                if(index >= 3) {
+                    index = 0;
                 }
                 images[index].scrollIntoView({
                     block: "center",
@@ -68,7 +65,7 @@ var nextPhoto = {
     },
     pointerInterval : null,
     nextInterval : null,
-    resetInterval : null
+    checker : true
 }
 
 nextPhoto.reset();
@@ -82,12 +79,10 @@ function menu() {
     if (x.style.display === "block") {
         x.style.display = "none";
         clearInterval(nextPhoto.resetInterval);
-        nextPhoto.resetInterval = null;
+        nextPhoto.checker = true;
     } 
     else {
         x.style.display = "block";
-        nextPhoto.resetInterval = setInterval(() => {
-            nextPhoto.reset;
-        }, 500);
+        nextPhoto.checker = false;
     }
 }
