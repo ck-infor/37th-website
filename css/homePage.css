@@ -393,7 +393,7 @@ footer img{
     }
 }
 
-@media (max-width: 1008px) and (min-width: 689px) {
+@media (max-width: 2160px) and (min-width: 1083px) {
     .logo-container img {
         height: 100%;
         width: auto;
@@ -403,7 +403,7 @@ footer img{
     }
 } 
 
-@media (max-width: 688px) {
+@media (max-width: 1082px) {
     .logo-container img {
         width: 100%;
         height: auto;
