@@ -27,6 +27,11 @@ function start() {
         topic.appendChild(span);
         container.appendChild(topic);
 
+        var innerTextContainer = document.createElement("div");
+        innerTextContainer.classList.add("outTopic");
+        var informationContainer = document.createElement("div");
+        informationContainer.classList.add("information");
+
         var photo = new Image();
         photo.src = photoList[i];
         photo.alt = topicList[i] + "照片";
@@ -36,12 +41,12 @@ function start() {
         var introText = document.createElement("p");
         introText.classList.add("innerText");
         introText.id = "intro" + i;
-        container.appendChild(introText);
+        informationContainer.appendChild(introText);
 
         var time = document.createElement("p");
         time.classList.add("innerText");
         time.innerHTML = "活動時間：" + timeList[i];
-        container.appendChild(time);
+        informationContainer.appendChild(time);
 
         var sign = document.createElement("p");
         sign.classList.add("innerText");
@@ -83,7 +88,10 @@ function start() {
             span.appendChild(link);
             sign.appendChild(span);
         }
-        container.appendChild(sign);
+        informationContainer.appendChild(sign);
+        innerTextContainer.appendChild(photo);
+        innerTextContainer.appendChild(informationContainer);
+        container.appendChild(innerTextContainer);
 
         target.appendChild(container);
 
