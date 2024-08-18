@@ -131,6 +131,7 @@ main {
     justify-content: center;
     align-items: center;
     padding-top: 0; /* 確保圖片緊貼著上方的導航欄 */
+    background-color: #000000;
 }
 
 .logo-container {

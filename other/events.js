@@ -11,15 +11,25 @@ function start() {
     var target = document.getElementById("event");
     var topicList = ["茶會", "暑訓", "迎新", "秋遊", "社慶", "耶誕晚會", "寒訓", "春遊"];
     var timeList = ["2023.7.8 ~ 2023.7.9", "2024.8.5 ~ 2024.8.11", "尚未決定", "尚未決定", "尚未決定", "尚未決定", "尚未決定", "尚未決定"];
-    var photoList = ["./photos/teaparty.jpg", "./photos/summerCamp.jpg", "./photos/welcome.jpg", "./photos/fall.jpg", "./photos/party.jpg", "./photos/christmas.jpg", "./photos/winter.jpg", "./photos/spring.jpg"];
-    var signList = ["活動已結束", "活動已結束", "尚未開放報名", "尚未開放報名", "尚未開放報名", "尚未開放報名", "尚未開放報名", "尚未開放報名"]
+    var photoList = [
+        "../other/photos/events/teaparty.jpg",
+        "../other/photos/events/summercamp.jpeg",
+        "../other/photos/events/welcome.jpg",
+        "../other/photos/events/autumn.jpg",
+        "../other/photos/events/party.jpg",
+        "../other/photos/events/christmas.jpg",
+        "../other/photos/events/wintercamp.jpg",
+        "../other/photos/events/spring.jpg"];
+    
+        var signList = ["活動已結束", "活動已結束", "尚未開放報名", "尚未開放報名", "尚未開放報名", "尚未開放報名", "尚未開放報名", "尚未開放報名"]
+    
+        var events_color=["#ce9178", "#c586c0", "#d4d4d4", "#dcdcaa", "#ffd700", "#4ec9b0", "#80dcfe", "#569ccb"]
 
     for(var i = 0; i < topicList.length; i++) {
         var container = document.createElement("div");
         container.classList.add("container");
         container.classList.add("hidden");
-        
-        var topic = document.createElement("p");
+        var topic = document.createElement("div");
         topic.classList.add("topic");
         var span = document.createElement("span");
         span.classList.add("highLight");
