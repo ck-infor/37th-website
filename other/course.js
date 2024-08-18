@@ -19,17 +19,17 @@ function start() {
     span.classList.add("hidden");
     span.style.backgroundColor = "none";
     course.appendChild(span);
-    paragraph.appendChild(course);
+    paragraph1.appendChild(course);
 
     var introduceText = document.createElement("p");
     introduceText.innerHTML = "社課是在每個禮拜五下午的第一堂課，所有社員皆需要來參加，我們的上課地點在資源大樓(夢紅樓旁)三樓的電腦教室二，會有專業的講師在社課中教授一些基礎的程式相關知識，即使之前鮮少接觸程式，也可以在社課中快速掌握相關概念！我們會在社課中教學的內容主要有...，";
     introduceText.classList.add("innerText");
     introduceText.classList.add("hidden");
-    paragraph.appendChild(introduceText);
+    paragraph1.appendChild(introduceText);
 
     var photoArea = document.createElement("div");
     photoArea.classList.add("content");
-    paragraph.appendChild(photoArea);
+    paragraph1.appendChild(photoArea);
 
     var afterSchoolCourse = document.createElement("p");
     afterSchoolCourse.classList.add("topic");
@@ -39,13 +39,13 @@ function start() {
     aftSpan.classList.add("hidden");
     aftSpan.style.backgroundColor = "none";
     afterSchoolCourse.appendChild(aftSpan);
-    paragraph.appendChild(afterSchoolCourse);
+    paragraph2.appendChild(afterSchoolCourse);
 
     var aftIntroText = document.createElement("p");
     aftIntroText.innerHTML = "放課可以說是資訊社的精華部分，我們會在每個禮拜的一到五放學後的晚上6:00~8:00跟成功、中山、景美在資源大樓三樓電腦教室二舉行，這邊的教學內容會較社課來的更為進階，多了更多實作的部分，不管你是想要來精進自己的程式技術，又或是想要來跟講師討論、切磋，甚至是想要來把講師電爛，放課都是你的不二選擇！";
     aftIntroText.classList.add("innerText");
     aftIntroText.classList.add("hidden");
-    paragraph.appendChild(aftIntroText);
+    paragraph2.appendChild(aftIntroText);
 
     // for(var i = 0; i < week.length; i++) {
     //     var topic = document.createElement("p");
