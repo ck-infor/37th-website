@@ -233,7 +233,7 @@
 }
 
 .topnav a.icon {
-    background: black;
+    background: #333;
     display: block;
     position: absolute;
     right: 30px;
@@ -271,7 +271,7 @@
         display: none;
     }
     .topnav {
-        display: inline;
+        display: block;
     }
     header {
         padding: 0;
