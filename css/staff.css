@@ -149,20 +149,25 @@ main {
     margin-bottom: 5px;
     font-size: 300%;
     line-height: 120%;
+    word-spacing: 5px;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
+.nameText hr{
+    margin-top: 10px;    
+}
+
 .positionText {
-    color: white;
-    font-family: "JetBrains Mono", monospace;
+    color: rgb(152, 142, 142);
+    font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
     font-optical-sizing: auto;
-    font-weight: 550;
+    font-weight: 450;
     font-style: normal;
-    font-size: 70%;
-    line-height: 120%;
+    font-size: 50%; 
+    line-height: 100%;
 }
 
 @keyframes slide-in {
