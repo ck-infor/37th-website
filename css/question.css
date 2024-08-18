@@ -57,7 +57,7 @@ header {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    margin-top: 37px;
+    margin-top: 35px;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: auto;
@@ -67,16 +67,19 @@ header {
 
 .answer {
     color: white;
-    font-family: "JetBrains Mono","Noto Sans TC", monospace , sans-serif;
+    font-family: "JetBrains Mono", "Noto Sans TC", monospace, sans-serif;
     font-optical-sizing: auto;
     font-weight: 550;
     font-style: normal;
-    margin-top: 37px;
-    margin-bottom: 20px;
-    margin-left: 60px;
-    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
     font-size: 150%;
     line-height: 200%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .pack {
