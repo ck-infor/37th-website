@@ -1,3 +1,8 @@
+*{
+    font-family: "JetBrains Mono", "Noto Sans TC", sans-serif, monospace;
+    font-optical-sizing: auto;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -73,6 +78,14 @@ main {
     height: auto;
 }
 
+.myimg{
+    width: 80px;
+    height: 80px;
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left: 10px ;
+}
+
 .content div {
     flex: 1;
     padding: 10px;
@@ -107,16 +120,16 @@ main {
 }
 
 .highLightOuter {
-    background-color: gold;
-    color: black;
+    background-color: none;
+    color: white;
     padding: 5px; /* 增加內邊距以顯示背景顏色 */
     display: inline-block; /* 確保背景顏色只影響文字部分 */
 }
 
 .highLight {
-    background-color: gold;
+    padding-left:20px;
+    background-color: none;
     color: black;
-    padding: 5px; /* 增加內邊距以顯示背景顏色 */
     display: inline-block; /* 確保背景顏色只影響文字部分 */
 }
 
@@ -147,7 +160,7 @@ main {
 }
 
 .lesson-card {
-    background: rgba(53, 74, 95, 1);
+    background: #d4d4d4;
     /* background記得改 */
     height: 170px;
     margin: 10px;
@@ -155,7 +168,7 @@ main {
     min-width: 300px;
     display: flex;
     position: relative;
-    border-radius: .2em;
+    border-radius: 20px;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
 }
@@ -180,20 +193,27 @@ main {
     right: 5px;
 }
 
+.lesson-card-text hr{
+    margin:0px;
+    border-radius: 50px;
+    border: solid;
+    margin-left: 18.5px;
+}
+
 .info-button {
     padding: 10px 20px;
     font-size: 16px;
-    margin-top: 10px;
+    margin: 10px;
     cursor: pointer;
-    background-color: #f8931d;
-    color: white;
+    background-color: #ECDFCC;
+    color: black;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     transition: background-color 0.3s ease;
 }
 
 .info-button:hover {
-    background-color: #e67e22;
+    background-color: #c586c0;
 }
 
 @media (max-width: 1008px) and (min-width: 689px) {

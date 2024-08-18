@@ -17,7 +17,7 @@ function start() {
     span.innerHTML = "社課";
     span.classList.add("highLightOuter");
     span.classList.add("hidden");
-    span.style.backgroundColor = "gold";
+    span.style.backgroundColor = "none";
     course.appendChild(span);
     paragraph.appendChild(course);
 
@@ -37,7 +37,7 @@ function start() {
     aftSpan.innerHTML = "放課";
     aftSpan.classList.add("highLightOuter");
     aftSpan.classList.add("hidden");
-    aftSpan.style.backgroundColor = "gold";
+    aftSpan.style.backgroundColor = "none";
     afterSchoolCourse.appendChild(aftSpan);
     paragraph.appendChild(afterSchoolCourse);
 

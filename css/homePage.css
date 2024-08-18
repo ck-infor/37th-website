@@ -285,16 +285,16 @@ footer img{
 
 .mobileClubSignImg {
     margin-top: 65px;
-    margin-left: 20px;
+    margin-left: 25px;
     margin-bottom: 65px;
-    width: 171px;
-    height: 29.25px;
+    width: 174.24px;
+    height: 35px;
 }
 
 .mobileIGImg {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 25px;
-    width: 30px;
+    width: 141.4px;
     height: 30px;
     display: flex;
     flex-direction: row;
