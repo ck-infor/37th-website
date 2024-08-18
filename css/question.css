@@ -81,8 +81,8 @@ header {
 
 .pack {
     padding-top: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
     padding-bottom: 10px;
 }
 
