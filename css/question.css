@@ -53,7 +53,7 @@ header {
 
 .question {
     color: white;
-    font-family: "JetBrains Mono", monospace, "Noto Sans TC", sans-serif;
+    font-family: "JetBrains Mono","Noto Sans TC", monospace , sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
@@ -67,7 +67,7 @@ header {
 
 .answer {
     color: white;
-    font-family: "JetBrains Mono", monospace "Noto Sans TC", sans-serif;
+    font-family: "JetBrains Mono","Noto Sans TC", monospace , sans-serif;
     font-optical-sizing: auto;
     font-weight: 550;
     font-style: normal;
