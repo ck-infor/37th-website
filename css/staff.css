@@ -64,6 +64,7 @@ main {
     flex: 1;
     max-width: 50%;
     height: auto;
+    border-radius: 30px;
     /* transition: transform 1s ease-out, opacity 1s ease-out; 
     transform: translateY(-50%);
     opacity: 0; */
@@ -136,6 +137,32 @@ main {
 
 .slide-in {
     animation: slide-in 1s ease-out;
+}
+
+.nameText {
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 300%;
+    line-height: 120%;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.positionText {
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 70%;
+    line-height: 120%;
 }
 
 @keyframes slide-in {
