@@ -51,6 +51,67 @@ header {
     color: white;
 }
 
+.question {
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    margin-top: 37px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: auto;
+    font-size: 175%;
+    line-height: 150%;
+}
+
+.answer {
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    margin-top: 37px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: auto;
+    font-size: 100%;
+    line-height: 150%;
+}
+
+.pack {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0;
+}
+
+.hrLines {
+    width: 100%;
+    size: 2px;
+    color: white;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY((50%));
+}
+
+.slide-in {
+    animation: slide-in 1s ease-out;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 @media (max-width: 688px) {
     .computerNav {
         display: none;
