@@ -5,7 +5,7 @@ function start() {
         "李宸漢", "王丞佑"
     ];
     var position= [
-        "社長 X 學術", "副社長 X 網管","外交長", "學術長", "學術", "行政長", "行政&衛生", "總務", "美宣", "美宣"
+        "社長 X 學術", "副社長 X 網管","外交長", "學術長", "學術", "行政長", "行政 X 衛生", "總務", "美宣", "美宣"
     ];
     var descriptionList = [
         "<h2>#</h2><p></p><h2>#</h2><p></p><h2>#</h2><p></p><h2>#</h2><p></p>",
@@ -22,15 +22,16 @@ function start() {
     
     for (var i = 0; i < nameList.length; i++) {
         var target = document.getElementById("pack" + i);
-        var element = document.createElement("p");
-        var span = document.createElement("span");
-        element.style.color = "black";
-        element.style.fontSize = "30px";
-        element.style.textAlign = "center";
-        span.innerHTML = nameList[i];
-        span.classList.add("highLight");
-        span.classList.add("hidden");
-        element.appendChild(span);
+        var element = document.createElement("div");
+        element.classList.add("nameText");
+        element.innerHTML = nameList[i];
+        var spanPos = document.createElement("span");
+        spanPos.classList.add("positionText");
+        spanPos.innerHTML = position[i];
+        var hrLine = document.createElement("hr");
+        element.appendChild(hrLine);
+        element.classList.add("hidden");
+        element.appendChild(spanPos);
         target.appendChild(element);
 
         var container = document.createElement("div");
@@ -80,7 +81,7 @@ function check() {
     document.querySelectorAll('.paragraph').forEach(function(paragraph) {
         observer.observe(paragraph);
     });
-    document.querySelectorAll('.highLight').forEach(function(span) {
+    document.querySelectorAll('.nameText').forEach(function(span) {
         observer.observe(span);
     });
 }
