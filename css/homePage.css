@@ -322,8 +322,7 @@ footer ul{
     justify-content: flex-end;
     width: auto;
     height: auto;
-    text-wrap: nowrap;    
-    
+    text-wrap: nowrap;
 }
 
 .freind_club{
@@ -342,7 +341,7 @@ footer ul{
 footer img{
     margin-top: 67.5px;
     margin-left: 67.5px;
-    width: 380px;
+    width: 330px;
     height: 65px;
 }
 
