@@ -47,12 +47,6 @@ header {
     display: flex;   
 }
 
-/*與computernav齊行，放logo與ckinfor*/
-.title_and_nav_container{
-    background-color: #00000055;
-    display: flex;
-    padding-right: auto;
-}
 
 .logoImg {
     /* padding-left: 30px; */
@@ -64,29 +58,6 @@ header {
     height: auto;
     display: flex;
 }
-
-.header h1{
-   height: 80px;
-}
-
-.title1 {
-    height: 10px;
-    width: 20px;
-    display: block;
-    text-indent: 101%;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.index_logo{
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-top: 8.5 px;
-    margin-bottom: 20 px;
-    height: 83px;
-    width: 344px;
-    display: flex;  
-}   
 
 .title1Mobile {
     color: rgb(4, 3, 3);
@@ -125,41 +96,6 @@ header {
     width: 400px;
 }
 
-.computerNav a{
-    font-family: "Noto Sans TC", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    transition: 0.15s;
-    color: white;
-    border: none;
-    text-align: center;
-    border-radius: 17px;
-    font-size: 20px;
-    padding: auto 10px 10px auto;
-    height: 25px;
-    width: 25px;
-    padding-right: 10px;
-}
-
-.computerNav a:hover{
-    font-family: "Noto Sans TC", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    transition: 0.15s;
-    background-color: white;
-    color: black;
-    border: none;
-    text-align: center;
-    border-radius: 17px;
-    font-size: 20px;
-    padding: 20px 40px; 
-    height: 25px;
-    width: 25px;    
-}
-
-
 nav ul {
     display: flex;
     list-style: none;
@@ -171,21 +107,6 @@ nav ul {
     right: 30px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-    margin-left: 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-nav ul li a:hover {
-    color: black;
-}
 
 .topnav {
     overflow: hidden;
