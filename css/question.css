@@ -55,13 +55,13 @@ header {
     color: white;
     font-family: "JetBrains Mono", monospace;
     font-optical-sizing: auto;
-    font-weight: 550;
+    font-weight: 700;
     font-style: normal;
     margin-top: 37px;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: auto;
-    font-size: 175%;
+    font-size: 200%;
     line-height: 150%;
 }
 
@@ -75,15 +75,15 @@ header {
     margin-bottom: 20px;
     margin-left: 60px;
     margin-right: auto;
-    font-size: 100%;
-    line-height: 150%;
+    font-size: 150%;
+    line-height: 200%;
 }
 
 .pack {
     padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
 }
 
 .hrLines {
