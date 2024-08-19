@@ -27,10 +27,6 @@ function start() {
     introduceText.classList.add("hidden");
     paragraph1.appendChild(introduceText);
 
-    var photoArea = document.createElement("div");
-    photoArea.classList.add("content");
-    paragraph1.appendChild(photoArea);
-
     var afterSchoolCourse = document.createElement("p");
     afterSchoolCourse.classList.add("topic");
     var aftSpan = document.createElement("span");
