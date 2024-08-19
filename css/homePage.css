@@ -120,14 +120,9 @@ nav ul {
     background-color: #ddd;
     color: black;
 }
-  
-.active {
-    background-color: #000000;
-    color: white;
-}
 
 main {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     padding-top: 0; /* 確保圖片緊貼著上方的導航欄 */
@@ -144,7 +139,7 @@ main {
     height: auto;
     animation: slide-in 1s ease-out; /* 應用動畫 */
 }
-
+/* 
 .gallery {
     height: 450px;
     width: 800px;
@@ -187,7 +182,7 @@ main {
     background: #ffffff;
     height: 16px;
     width: 16px;
-}
+} */
 
 .upper_footer{
     margin-top: 20px;
@@ -320,6 +315,124 @@ footer img{
     text-wrap: nowrap;
 }
 
+.introContainer {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 15px;
+    border-radius: 30px;
+    background-clip: padding-box;
+    width: fit-content;
+    max-height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #d4d4d4;    
+    color:black;
+}
+
+.topic {
+    font-size: 30px;
+    color: black;
+    text-align: left;
+    width: fit-content;
+    margin-left: 10%;
+}
+
+hr {
+    border-color: black;
+}
+
+.introText {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 10px;
+    padding: 10px 20px;
+    box-sizing: border-box; 
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY((50%));
+}
+
+.slide-in {
+    animation: slide-in 1s ease-out;
+}
+
+.mySlides {
+	display: none;
+}
+
+.mySlides img {
+	vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.Active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
 /* 定義動畫 */
 @keyframes slide-in {
     from {
@@ -367,5 +480,22 @@ footer img{
     }
     .mobileFooter {
         display: block;
+    }
+    .introContainer {
+        margin: 50px 20px;
+    }
+    .innerText {
+        padding: 10px 30px;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
