@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="start()">
     <header>
         <div class="homepage_title title_and_nav_container">
             <h1>
@@ -45,18 +45,32 @@
         </div>
     </header>
     <main>
-        <div class="gallery">
-            <div class="image-slider">
-                <img src="./other/photos/homePage/IMG_1847.jpg" alt="first photo" data-index="0"/>
-                <img src="./other/photos/homePage/實驗照片.PNG" alt="second photo" data-index="1"/>
-                <img src="./other/photos/homePage/歐拉公式.PNG" alt="third photo" data-index="2"/>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="./other/photos/homePage/IMG_1847.jpg" style="width:100%">
             </div>
-            <div class="indicators">
-                <div class="indicator Active"></div>
-                <div class="indicator"></div>
-                <div class="indicator"></div>
+            
+            <div class="mySlides fade">
+                <img src="./other/photos/homePage/實驗照片.PNG" style="width:100%">
             </div>
-          </div>
+            
+            <div class="mySlides fade">
+                <img src="./other/photos/homePage/歐拉公式.PNG" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br></br>
+            
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        <div id="introduction"></div>
     </main>
     <footer class="footer_container">
         <div class="upper_footer">
