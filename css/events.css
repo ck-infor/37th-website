@@ -16,10 +16,13 @@ body {
 .myimg {
     flex: 1;
     max-width: 45%;
-    height: auto;
+    height: fit-content;
     order: 2;
-    margin-bottom: 20px;
-    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+    object-fit: scale-down;
+    border-radius: 30px;
 }
 
 .content div {
@@ -45,8 +48,8 @@ body {
     font-size: 25px;
     color: black    ;
     text-align: center;
-    margin: 20px;
-    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 10px 50px;
     box-sizing: border-box; 
     line-height: 200%;
@@ -105,6 +108,40 @@ body {
     display: flex;
 }
 
+.mobileTopic {
+    font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    font-size: 40px;
+    color: black;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+    line-height: 200%;
+    display: none;
+}
+
+.mobileSpace {
+    width: 100%;
+    display: none;
+    height: 30px;
+}
+
+.hrLine {
+    display: none;
+    size: 2px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    background-color: black;
+    border-color: black;
+}
+
 @keyframes slide-in {
     from {
         transform: translateY(50%);
@@ -128,16 +165,43 @@ body {
     }
     .container {
         max-width: 600px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .topic {
+        display: none;
     }
     .myimg {
         order: 1;
-        max-width: 100%;
+        max-width: 90%;
+        padding: 0;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .innerText {
+        font-size: 20px;
+        padding-left: 0;
+        padding-right: 0;
     }
     .information {
         order: 2;
         max-width: 100%;
+        padding-bottom: 5px;
     }
     .outTopic {
+        display: block;
+    }
+    .mobileTopic {
+        display: block;
+    }
+    .mobileSpace {
+        display: block;
+    }
+    .hrLine {
         display: block;
     }
 }

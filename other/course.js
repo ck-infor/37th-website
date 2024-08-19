@@ -22,7 +22,7 @@ function start() {
     paragraph1.appendChild(course);
 
     var introduceText = document.createElement("p");
-    introduceText.innerHTML = "社課是在每個禮拜五下午的第一堂課，所有社員皆需要來參加，我們的上課地點在資源大樓(夢紅樓旁)三樓的電腦教室二，會有專業的講師在社課中教授一些基礎的程式相關知識，即使之前鮮少接觸程式，也可以在社課中快速掌握相關概念！我們會在社課中教學的內容主要有...，";
+    introduceText.innerHTML = "社課是在每個禮拜五下午的第一堂課，所有社員皆需要來參加，我們的上課地點在資源大樓(夢紅樓旁)三樓的電腦教室二，會有專業的講師在社課中教授一些基礎的程式相關知識，即使之前鮮少接觸程式，也可以在社課中快速掌握相關概念！我們這學期會在社課中教學的內容主要有Python基礎語法、基礎應用、機器學習等多元課程，以及最後留幾堂課的時間讓社員們進行成果發表，互相交流、切磋！";
     introduceText.classList.add("innerText");
     introduceText.classList.add("hidden");
     paragraph1.appendChild(introduceText);
@@ -173,13 +173,7 @@ function newMessageBox(id) {
                 customClass : "msgBtn"
             }
         },
-        title : {
-            myTitle : {
-                text : aftCourseList[id],
-                // text : "hello",
-                customClass : "msgTitle"
-            }
-        },
+        title : aftCourseList[id],
         message : "<img src=\"" + aftCoursePhotos[id] + "\" class=\"msgPhoto\"><p class=\"msgText\">" + aftCourseIntro[id] + "</p>",
         customClass : "msgBox",
         top : "auto"
