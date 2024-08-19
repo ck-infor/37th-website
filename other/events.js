@@ -14,7 +14,7 @@ function start() {
     var photoList = [
         "../other/photos/events/teaparty.jpg",
         "../other/photos/events/summercamp.jpeg",
-        "../other/photos/events/welcome.jpg",
+        "../other/photos/events/welcome.JPG",
         "../other/photos/events/autumn.jpg",
         "../other/photos/events/party.jpg",
         "../other/photos/events/christmas.jpg",
