@@ -29,6 +29,12 @@ function start() {
         var container = document.createElement("div");
         container.classList.add("container");
         container.classList.add("hidden");
+        container.style.backgroundColor = events_color[i];
+
+        var space = document.createElement("div");
+        space.classList.add("mobileSpace");
+        container.appendChild(space);
+
         var topic = document.createElement("div");
         topic.classList.add("topic");
         var span = document.createElement("span");
@@ -48,15 +54,25 @@ function start() {
         photo.classList.add("myimg");
         container.appendChild(photo);
 
-        var introText = document.createElement("p");
-        introText.classList.add("innerText");
-        introText.id = "intro" + i;
-        informationContainer.appendChild(introText);
+        var mobileTopic = document.createElement("div");
+        mobileTopic.classList.add("mobileTopic");
+        mobileTopic.innerHTML = topicList[i];
+        informationContainer.appendChild(mobileTopic);
+
+        var hrLine = document.createElement("hr");
+        hrLine.classList.add("hrLine");
+        informationContainer.appendChild(hrLine);
 
         var time = document.createElement("p");
         time.classList.add("innerText");
         time.innerHTML = "活動時間：" + timeList[i];
         informationContainer.appendChild(time);
+
+        var introText = document.createElement("p");
+        introText.classList.add("innerText");
+        introText.style.marginBottom = "20px"
+        introText.id = "intro" + i;
+        informationContainer.appendChild(introText);
 
         var sign = document.createElement("p");
         sign.classList.add("innerText");
@@ -66,6 +82,7 @@ function start() {
                 span.classList.add("highLight");
                 span.style.backgroundColor = "red";
                 span.style.color = "white";
+                span.style.fontSize = "30px";
                 span.innerHTML = signList[i];
                 sign.appendChild(span);
             }
@@ -74,6 +91,7 @@ function start() {
                 span.classList.add("highLight");
                 span.style.backgroundColor = "red";
                 span.style.color = "white";
+                span.style.fontSize = "30px";
                 span.innerHTML = signList[i];
                 sign.appendChild(span);
             }
@@ -82,6 +100,7 @@ function start() {
                 span.classList.add("highLight");
                 span.style.backgroundColor = "blue";
                 span.style.color = "white";
+                span.style.fontSize = "30px";
                 span.innerHTML = signList[i];
                 sign.appendChild(span);
             }
