@@ -257,4 +257,13 @@ main {
     header {
         padding: 0;
     }
+    .club_courses {
+        margin: 50px 20px;
+    }
+    .afterschool_courses {
+        margin: 50px 20px;
+    }
+    .innerText {
+        padding: 10px 30px;
+    }
 }
