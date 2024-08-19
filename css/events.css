@@ -59,16 +59,17 @@ body {
 }
 
 .register_status{
+    width: 200px;
+    height: 50px;
     font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
     font-optical-sizing: auto;
     font-weight: 450;
     font-style: normal;
-    font-size: 23px;
     color: rgb(120, 115, 115)    ;
-    text-align: left;
-    margin-left: 20px;
+    margin-left: 5px;
     margin-right: 20px;
-    padding: 3px 50px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
     box-sizing: border-box; 
     line-height: 200%;
     display: block;
@@ -81,11 +82,10 @@ body {
     font-optical-sizing: auto;
     font-weight: 450;
     font-style: normal;
-    font-size: 23px;
+    font-size: 20px;
     color: rgb(120, 115, 115)    ;
     text-align: left;
     margin-left: 20px;
-    margin-right: 20px;
     padding: 3px 50px;
     box-sizing: border-box; 
     line-height: 200%;
@@ -147,7 +147,7 @@ body {
 .mobileTopic {
     font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
     font-optical-sizing: auto;
-    font-weight: 350;
+    font-weight: 600;
     font-style: normal;
     font-size: 40px;
     color: black;
@@ -167,10 +167,26 @@ body {
     height: 30px;
 }
 
+.mobile_schedule_time{
+    display: none;
+    font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(120, 115, 115)    ;
+    text-align: left;
+    margin-left: 20px;
+    box-sizing: border-box; 
+    line-height: 200%;
+}
+
 .hrLine {
     display: none;
     size: 2px;
     width: 90%;
+    margin-top: 2px;
+    margin-bottom: 2px;
     margin-left: auto;
     margin-right: auto;
     color: black;
@@ -199,6 +215,11 @@ body {
     header {
         padding: 0;
     }
+
+    .event_schedule_time{
+        display: none;
+    }
+
     .container {
         max-width: 600px;
         margin-top: 50px;
@@ -238,6 +259,9 @@ body {
         display: block;
     }
     .hrLine {
+        display: block;
+    }
+    .mobile_schedule_time{
         display: block;
     }
 }

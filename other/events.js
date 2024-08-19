@@ -63,6 +63,11 @@ function start() {
         hrLine.classList.add("hrLine");
         informationContainer.appendChild(hrLine);
 
+        var mobile_schedule_time = document.createElement("p");
+        mobile_schedule_time.classList.add("mobile_schedule_time");
+        mobile_schedule_time.innerHTML = "活動時間" + timeList[i];
+        informationContainer.appendChild(mobile_schedule_time);
+
         var time = document.createElement("p");
         time.classList.add("event_schedule_time");
         time.innerHTML = "活動時間：" + timeList[i];
@@ -82,7 +87,7 @@ function start() {
                 span.classList.add("register_status");
                 span.style.backgroundColor = "#CE9178";
                 span.style.color = "white";
-                span.style.fontSize = "30px";
+                span.style.fontSize = "20px";
                 span.innerHTML = signList[i];
                 sign.appendChild(span);
             }
@@ -91,7 +96,7 @@ function start() {
                 span.classList.add("register_status");
                 span.style.backgroundColor = "#6482AD";
                 span.style.color = "white";
-                span.style.fontSize = "30px";
+                span.style.fontSize = "20px";
                 span.innerHTML = signList[i];
                 sign.appendChild(span);
             }
@@ -100,7 +105,7 @@ function start() {
                 span.classList.add("register_status");
                 span.style.backgroundColor = "#3C3D37";
                 span.style.color = "white";
-                span.style.fontSize = "30px";
+                span.style.fontSize = "20px";
                 span.innerHTML = signList[i];
                 sign.appendChild(span);
             }
