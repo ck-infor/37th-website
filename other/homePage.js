@@ -1,88 +1,104 @@
-const indicators = document.querySelectorAll(".indicator");
-const images = document.querySelectorAll(".image-slider img");
-var pointer = 0;
-var pointerBack = 0;
-
-indicators.forEach((element, index) => {
-    element.addEventListener("click", () => {
-        images[index].scrollIntoView({
-            block: "center",
-            behavior: "smooth",
-        });
-        nextPhoto.reset();
-    });
-});
-
-const gallery = document.querySelector(".gallery");
-const galleryWidth = 800;
-const galleyHeight = 450;
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        const targetIndex = entry.target.dataset.index;
-        console.log(targetIndex);
-        if (entry.isIntersecting) {
-            indicators[targetIndex].classList.add("Active");
-            pointer = targetIndex;
-        } 
-        else {
-            indicators[targetIndex].classList.remove("Active");
-        }
-    });
-  },
-  {
-    root: null,
-    rootMargin: "0px 0px 0px 0px",
-    threshold: 0.5,
-  }
-);
-
-images.forEach((element) => {
-    observer.observe(element);
-});
-
+var slideIndex = 1;
+var slideBack = 1;
 var nextPhoto = {
     reset : function() {
         clearInterval(this.nextInterval);
-        clearInterval(this.pointerInterval);
-        this.pointerInterval = setInterval(() => {
-            pointerBack = pointer;
-        }, 500);
+        slideBack = slideIndex;
         this.nextInterval = setInterval(() => {
-            if((pointerBack == pointer) && (this.checker)) {
-                var index = Number(pointer) + 1;
-                console.log(index);
-                if(index >= 3) {
-                    index = 0;
-                }
-                images[index].scrollIntoView({
-                    block: "center",
-                    behavior: "smooth",
-                });
-                nextPhoto.reset();
+            if((slideBack == slideIndex) && (this.checker)) {
+               plusSlides(1);
+               nextPhoto.reset();
             }
         }, 5000);
     },
-    pointerInterval : null,
     nextInterval : null,
     checker : true
 }
 
-nextPhoto.reset();
-if(window.screen.availWidth < galleryWidth) {
-    gallery.style.width = "80%";
-    gallery.style.height = "auto";
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        slideIndex = 1;
+    }    
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" Active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " Active";
+    nextPhoto.reset();
+}
+
+nextPhoto.reset();
 
 function menu() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
         x.style.display = "none";
-        clearInterval(nextPhoto.resetInterval);
         nextPhoto.checker = true;
     } 
     else {
         x.style.display = "block";
         nextPhoto.checker = false;
     }
+}
+
+function start() {
+    var topicList = ["建國中學資訊社", "IZCC"];
+    var introduceTextList = ["建中資訊社是一個專注於電腦和資訊科技的學術性社團。在這裡，你可以學習程式設計、演算法、網頁開發、人工智慧等科技領域的課程。除此之外，你還可以認識許多學術力一流的同儕，並與友校的朋友交流。",
+    "IZCC是建中資訊 (INFOR)、 中山資研 (ZSISC)、成功電研 (CKCSC)與景美電資 (CMIOC) 的合稱。IZCC由一群熱愛資訊的人們組成。放學會舉辦課程一同學習，也會共同舉辦活動，像是暑訓、秋遊、耶誕晚會等······。"];
+    var paragraph = document.getElementById("introduction");
+
+    for(var i = 0; i < topicList.length; i++) {
+        var container = document.createElement("div");
+        container.classList.add("introContainer");
+        container.classList.add("hidden");
+
+        var topic = document.createElement("div");
+        topic.innerHTML = topicList[i];
+        topic.classList.add("topic");
+        var hrLine = document.createElement("hr");
+        topic.appendChild(hrLine);
+        container.appendChild(topic);
+
+        var introText = document.createElement("div");
+        introText.innerHTML = introduceTextList[i];
+        introText.classList.add("introText");
+        container.appendChild(introText);
+
+        paragraph.appendChild(container);
+    }
+    setInterval(check(), 50);
+}
+
+var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("slide-in");
+            entry.target.classList.remove("hidden");
+        }
+    });
+}, { threshold: 0.1 });
+
+function check() {
+    document.querySelectorAll('.introContainer').forEach(function(paragraph) {
+        observer.observe(paragraph);
+    });
 }
