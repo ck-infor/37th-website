@@ -23,7 +23,7 @@ function start() {
     
         var signList = ["活動已結束", "活動已結束", "尚未開放報名", "尚未開放報名", "尚未開放報名", "尚未開放報名", "尚未開放報名", "尚未開放報名"]
     
-        var events_color=["#ce9178", "#c586c0", "#d4d4d4", "#dcdcaa", "#ffd700", "#4ec9b0", "#80dcfe", "#569ccb"]
+        var events_color=["#F8EDE3", "#DFD3C3", "#d4d4d4", "#dcdcaa", "#FFF8DB", "#D0B8A8", "#DFD3C3", "#F8EDE3"]
 
     for(var i = 0; i < topicList.length; i++) {
         var container = document.createElement("div");
@@ -64,7 +64,7 @@ function start() {
         informationContainer.appendChild(hrLine);
 
         var time = document.createElement("p");
-        time.classList.add("innerText");
+        time.classList.add("event_schedule_time");
         time.innerHTML = "活動時間：" + timeList[i];
         informationContainer.appendChild(time);
 
@@ -79,8 +79,8 @@ function start() {
         if(signList[i].search("^http") == -1) {
             if(signList[i].search("^活動已結束$") == 0) {
                 var span = document.createElement("span");
-                span.classList.add("highLight");
-                span.style.backgroundColor = "red";
+                span.classList.add("register_status");
+                span.style.backgroundColor = "#CE9178";
                 span.style.color = "white";
                 span.style.fontSize = "30px";
                 span.innerHTML = signList[i];
@@ -88,8 +88,8 @@ function start() {
             }
             else if(signList[i].search("^報名已結束$") == 0) {
                 var span = document.createElement("span");
-                span.classList.add("highLight");
-                span.style.backgroundColor = "red";
+                span.classList.add("register_status");
+                span.style.backgroundColor = "#6482AD";
                 span.style.color = "white";
                 span.style.fontSize = "30px";
                 span.innerHTML = signList[i];
@@ -97,8 +97,8 @@ function start() {
             }
             else {
                 var span = document.createElement("span");
-                span.classList.add("highLight");
-                span.style.backgroundColor = "blue";
+                span.classList.add("register_status");
+                span.style.backgroundColor = "#3C3D37";
                 span.style.color = "white";
                 span.style.fontSize = "30px";
                 span.innerHTML = signList[i];
@@ -107,8 +107,8 @@ function start() {
         }
         else {
             var span = document.createElement("span");
-            span.classList.add("highLight");
-            span.style.backgroundColor = "orange";
+            span.classList.add("register_status");
+            span.style.backgroundColor = "#9DC5A8";
             span.style.color = "white";
             var link = document.createElement("a");
             link.innerHTML = "點我前往報名";

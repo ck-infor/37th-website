@@ -16,11 +16,13 @@ body {
 .myimg {
     flex: 1;
     max-width: 45%;
-    height: fit-content;
+    height:min-content ;
     order: 2;
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 50px;
+    margin-right: 20px;
     display: block;
+    justify-content:end ;
     object-fit: scale-down;
     border-radius: 30px;
 }
@@ -43,14 +45,48 @@ body {
 .innerText {
     font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
     font-optical-sizing: auto;
-    font-weight: 350;
+    font-weight: 450;
     font-style: normal;
     font-size: 25px;
     color: black    ;
-    text-align: center;
+    text-align:justify;
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px 50px;
+    box-sizing: border-box; 
+    line-height: 200%;
+    display: block;
+}
+
+.register_status{
+    font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 23px;
+    color: rgb(120, 115, 115)    ;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 3px 50px;
+    box-sizing: border-box; 
+    line-height: 200%;
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.event_schedule_time{
+    font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 23px;
+    color: rgb(120, 115, 115)    ;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 3px 50px;
     box-sizing: border-box; 
     line-height: 200%;
     display: block;
@@ -76,7 +112,7 @@ body {
     background-color: none;
     font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     font-size: 50px;
     color: black;
