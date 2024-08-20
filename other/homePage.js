@@ -86,8 +86,14 @@ function start() {
 
         if(i==1){
             var ul=document.createElement("ul");
-            for(var i=0;i<clublogoList.length; i++){
-                var li=document.createElement("li");
+            ul.classList.add("clubsUl");
+            for(var i = 0; i < clublogoList.length; i++){
+                var li = document.createElement("li");
+                li.style.maxWidth = "220px";
+                li.style.paddingLeft = "10px";
+                li.style.paddingRight = "10px";
+                li.style.marginLeft = "auto";
+                li.style.marginRight = "auto";
                 var photo = new Image();
                 photo.src = clublogoList[i];
                 photo.alt = clublogoList[i] + "照片";
