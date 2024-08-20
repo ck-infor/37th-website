@@ -15,6 +15,7 @@ function start() {
     var span = document.createElement("span");
     course.classList.add("topic");
     span.innerHTML = "社課";
+
     span.classList.add("highLightOuter");
     span.classList.add("hidden");
     span.style.backgroundColor = "none";

@@ -71,6 +71,19 @@ main {
     width: calc(100% - 100px); /* 扣除左右邊距 */
     box-sizing: border-box; /* 確保內邊距計算在內 */
 }
+.club_courses .myimg{
+    display: flex;
+    flex: 1;
+    max-width: 45%;
+    height: min-content;
+    order: 2;
+    margin-top: auto;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    display: block;
+    justify-content: end;
+    object-fit: scale-down;
+}
 
 .content .myimg {
     flex: 1;
@@ -113,18 +126,23 @@ main {
     border: 15px;
     border-radius: 30px;
     background-clip: padding-box;
-    width: fit-content;
     max-height: auto;
     margin-top: 100px;
     margin-bottom: 100px;
-    background-color: #d4d4d4;    
+    background-color: transparent;    
     color:black;
+    width:50%;
 }
 
 .topic {
-    font-size: 30px;
+    font-size: 80px;
     color: black;
-    text-align: center;
+    text-align: left;
+    font-family: "JetBrains Mono", "Noto Sans TC", sans-serif, monospace;
+    display: flex;
+    margin: 20px;
+    padding: 10px 50px;
+    background-color: #d4d4d4;
 }
 
 .noMargin {
@@ -132,12 +150,15 @@ main {
 }
 
 .innerText {
-    font-size: 20px;
+    font-size: 30px;
     color: black;
-    text-align: center;
+    text-align: left;
     margin: 20px;
-    padding: 10px 50px;
+    padding: 10px 50px 50px 50px;
     box-sizing: border-box; 
+    line-height: 200%;
+    display: flex;
+    background-color: #d4d4d4;
 }
 
 .hidden {
@@ -183,12 +204,12 @@ main {
 
 .lesson-card {
     background: #d4d4d4;
-    /* background記得改 */
-    height: 170px;
+    height: 149px;
     margin: 10px;
-    width: 30%;
+    width: 10%;
     min-width: 300px;
-    display: flex;
+    display: inline-flex;
+    flex-direction: column;
     position: relative;
     border-radius: 20px;
     overflow: hidden;
