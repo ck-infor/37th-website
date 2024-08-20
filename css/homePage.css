@@ -328,6 +328,7 @@ footer img{
     display: block;
     background-color: rgb(197, 197, 197);
     border-radius: 30px;
+    margin: 50px 20px;
 }
 
 .topic {
@@ -387,7 +388,17 @@ li{
     padding: 0px;
     box-sizing: border-box; 
     line-height: 200%;
-    display: flex;
+}
+
+.clubsUl {
+    max-width: 100%;
+    width: fit-content;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
 }
 
 hr {
@@ -534,7 +545,7 @@ hr {
         display: block;
     }
     .introContainer {
-        margin: 50px 20px;
+        margin: 30px 12px;
     }
     .innerText {
         padding: 10px 30px;
