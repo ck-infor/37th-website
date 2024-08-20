@@ -84,32 +84,31 @@ function start() {
         introText.classList.add("introText");
         container.appendChild(introText);
 
-        var ul=document.createElement("ul");
-        for(var i=0;i<clublogoList.length; i++){
-            var li=document.createElement("li");
-            var photo = new Image();
-            photo.src = clublogoList[i];
-            photo.alt = clublogoList[i] + "照片";
-            photo.classList.add("clublogo");
-            container.appendChild(photo);
-            li.appendChild(photo);
+        if(i==1){
+            var ul=document.createElement("ul");
+            for(var i=0;i<clublogoList.length; i++){
+                var li=document.createElement("li");
+                var photo = new Image();
+                photo.src = clublogoList[i];
+                photo.alt = clublogoList[i] + "照片";
+                photo.classList.add("clublogo");
+                li.appendChild(photo);
 
-            var chname=document.createElement("div");
-            chname.classList.add("clubchname");
-            chname.innerHTML = clubchnameList[i];
-            container.appendChild(chname);
-            li.appendChild(chname);
+                var chname=document.createElement("div");
+                chname.classList.add("clubchname");
+                chname.innerHTML = clubchnameList[i];
+                li.appendChild(chname);
 
-            var enname=document.createElement("div");
-            enname.classList.add("clubenname");
-            enname.innerHTML = clubennameList[i];
-            container.appendChild(enname);          
-            li.appendChild(enname);
-            ul.appendChild(li);
+                var enname=document.createElement("div");
+                enname.classList.add("clubenname");
+                enname.innerHTML = clubennameList[i];
+                li.appendChild(enname);
+                ul.appendChild(li);
             }
         container.appendChild(ul);
-        paragraph.appendChild(container);        
-    }
+        }
+        paragraph.appendChild(container);                
+    }       
     setInterval(check(), 50);
 }
 
