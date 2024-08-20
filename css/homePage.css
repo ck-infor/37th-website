@@ -316,18 +316,18 @@ footer img{
 }
 
 .introContainer {
-    text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    border: 15px;
+    font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 25px;
+    text-align:justify;
+    padding: 10px 50px;
+    box-sizing: border-box; 
+    line-height: 200%;
+    display: block;
+    background-color: rgb(197, 197, 197);
     border-radius: 30px;
-    background-clip: padding-box;
-    width: fit-content;
-    max-height: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    background-color: #d4d4d4;    
-    color:black;
 }
 
 .topic {
@@ -336,6 +336,58 @@ footer img{
     text-align: left;
     width: fit-content;
     margin-left: 10%;
+    font-weight: 600;
+}
+
+.clubchname{
+    font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0px;
+    box-sizing: border-box; 
+    line-height: 200%;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+}
+
+li{
+    margin:20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.clublogo{
+    width:200px;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.clubenname{
+    font-family: "JetBrains Mono", monospace, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding: 0px;
+    box-sizing: border-box; 
+    line-height: 200%;
+    display: flex;
 }
 
 hr {
