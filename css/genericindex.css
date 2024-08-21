@@ -77,8 +77,6 @@
       display: flex;  
   }   
   
-
-  
   .sorry{
       color: white;
       text-align: center;
@@ -244,6 +242,137 @@
 .topnav #myLinks a:hover {
       background-color: #ddd;
       color: black;
+}
+
+.upper_footer{
+    margin-top: 20px;
+    background-color: rgb(30, 24, 24);
+    /* position: fixed; */
+    bottom: 50px;
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+
+.footer_container{
+    padding: 0;
+}
+
+.freind_club_topic{
+    margin-bottom: 25px;
+    color:white;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 130%;
+    font-style: normal;
+}
+
+footer ul{
+    list-style: none;
+    position: absolute;
+    /* top: 20px; */
+    right: 67.5px;
+    color:white;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 100%;
+    font-style: normal; 
+    display: inline;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    text-wrap: nowrap;
+}
+
+.freind_club{
+    margin-top: 15px;
+    color:white;
+    font-family: "JetBrains Mono", "Noto Sans TC", sans-serif, monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 90%;
+    font-style: normal;
+    display: block;
+    flex-direction: column;
+    text-decoration-line: none;
+}
+
+footer img{
+    margin-top: 67.5px;
+    margin-left: 67.5px;
+    width: 330px;
+    height: 65px;
+}
+
+.bottom_footer{
+    background-color: rgb(30, 24, 24);
+    /* margin-top: 10px; */
+    border-top: 1px solid rgb(223, 222, 222);
+    /* position: fixed; */
+    bottom: 0px;
+    height: 70px;
+    width: 100%;
+    display: flex;
+}
+
+.bottom_footer img{
+    margin-top: 10px;
+    margin-left: 80px;
+    width: 190px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.flexContainer {
+    display: flex;
+}
+
+.mobileFooter {
+    display: none;
+    margin-top: 10px;
+    background-color: rgb(30, 24, 24);
+}
+
+.mobileClubSignImg {
+    margin-top: 65px;
+    margin-left: 25px;
+    margin-bottom: 65px;
+    width: 174.24px;
+    height: 35px;
+}
+
+.mobileIGImg {
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 141.4px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.mobileFooter ul {
+    list-style: none;
+    position: absolute;
+    /* top: 20px; */
+    right: 20px;
+    color:white;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 80%;
+    font-style: normal; 
+    display: inline;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    text-wrap: nowrap;
 }
 
 @media (max-width: 2160px) and (min-width: 1083px) {
