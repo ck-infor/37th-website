@@ -91,8 +91,20 @@ main {
 }
 
 .paragraph {
-    font-size: 14px;
-    color: black;;
+    font-size: 20px;
+    color: white;
+    font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
+    padding-left: 20px;
+    font-weight: 450;
+}
+.paragraph h2{
+    line-height: 250%;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.paragraph p{
+    font-weight: 400;
 }
 
 .paragraph .hidden {
@@ -142,7 +154,7 @@ main {
 
 .nameText {
     color: white;
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Noto Sans TC", "JetBrains Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 550;
     font-style: normal;
@@ -191,6 +203,8 @@ main {
 @media (max-width: 688px) {
     .content .myimg {
         max-width: 100%;
+        width: 100%;
+        height: auto;
         order: 1;
     }
     .content {
