@@ -8,30 +8,34 @@ body {
     display: flex;
     align-items: center;
     margin: 20px 0;
-    padding: 10px 50px; /* 設置內邊距 */
-    width: calc(100% - 100px); /* 扣除左右邊距 */
-    box-sizing: border-box; /* 確保內邊距計算在內 */
+    padding: 10px 50px;
+    /* 設置內邊距 */
+    width: calc(100% - 100px);
+    /* 扣除左右邊距 */
+    box-sizing: border-box;
+    /* 確保內邊距計算在內 */
 }
 
 .myimg {
     flex: 1;
     max-width: 45%;
-    height:min-content ;
+    height: min-content;
     order: 2;
     margin-top: auto;
     margin-bottom: 50px;
     margin-right: 20px;
     display: block;
-    justify-content:end ;
+    justify-content: end;
     object-fit: scale-down;
     border-radius: 30px;
+    width: min-content;
 }
 
 .content div {
     flex: 1;
     padding: 10px;
 }
-    
+
 .topic {
     padding-left: 65px;
     padding-top: 30px;
@@ -39,7 +43,7 @@ body {
     color: black;
     text-align: center;
     display: flex;
-    width:200px;
+    width: 200px;
 }
 
 .innerText {
@@ -48,46 +52,46 @@ body {
     font-weight: 450;
     font-style: normal;
     font-size: 25px;
-    color: black    ;
-    text-align:left;
+    color: black;
+    text-align: left;
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px 50px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     line-height: 200%;
     display: block;
 }
 
-.register_status{
+.register_status {
     width: 200px;
     height: 50px;
     font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
     font-optical-sizing: auto;
     font-weight: 450;
     font-style: normal;
-    color: rgb(120, 115, 115)    ;
+    color: rgb(120, 115, 115);
     margin-left: 5px;
     margin-right: 20px;
     margin-bottom: 20px;
     padding: 5px 10px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     line-height: 200%;
     display: block;
     border-radius: 20px;
     text-align: center;
 }
 
-.event_schedule_time{
+.event_schedule_time {
     font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
     font-optical-sizing: auto;
     font-weight: 450;
     font-style: normal;
     font-size: 20px;
-    color: rgb(120, 115, 115)    ;
+    color: rgb(120, 115, 115);
     text-align: left;
     margin-left: 20px;
     padding: 3px 50px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     line-height: 200%;
     display: block;
 }
@@ -104,8 +108,10 @@ body {
 .highLightOuter {
     background-color: gold;
     color: black;
-    padding: 5px; /* 增加內邊距以顯示背景顏色 */
-    display: inline-block; /* 確保背景顏色只影響文字部分 */
+    padding: 5px;
+    /* 增加內邊距以顯示背景顏色 */
+    display: inline-block;
+    /* 確保背景顏色只影響文字部分 */
 }
 
 .highLight {
@@ -116,8 +122,10 @@ body {
     font-style: normal;
     font-size: 50px;
     color: black;
-    padding: 5px; /* 增加內邊距以顯示背景顏色 */
-    display: block; /* 確保背景顏色只影響文字部分 */
+    padding: 5px;
+    /* 增加內邊距以顯示背景顏色 */
+    display: block;
+    /* 確保背景顏色只影響文字部分 */
 }
 
 .container {
@@ -156,7 +164,7 @@ body {
     margin-bottom: 0px;
     margin-top: 0px;
     padding: 0px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     line-height: 200%;
     display: none;
 }
@@ -167,17 +175,17 @@ body {
     height: 30px;
 }
 
-.mobile_schedule_time{
+.mobile_schedule_time {
     display: none;
     font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
     font-optical-sizing: auto;
     font-weight: 450;
     font-style: normal;
     font-size: 20px;
-    color: rgb(120, 115, 115)    ;
+    color: rgb(120, 115, 115);
     text-align: left;
     margin-left: 20px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     line-height: 200%;
 }
 
@@ -199,6 +207,7 @@ body {
         transform: translateY(50%);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -209,14 +218,16 @@ body {
     .computerNav {
         display: none;
     }
+
     .topnav {
         display: inline;
     }
+
     header {
         padding: 0;
     }
 
-    .event_schedule_time{
+    .event_schedule_time {
         display: none;
     }
 
@@ -227,9 +238,11 @@ body {
         margin-left: 20px;
         margin-right: 20px;
     }
+
     .topic {
         display: none;
     }
+
     .myimg {
         order: 1;
         max-width: 90%;
@@ -238,30 +251,39 @@ body {
         margin-bottom: 0px;
         margin-left: auto;
         margin-right: auto;
+        width: 100%;
+        height: auto;
     }
+
     .innerText {
         font-size: 20px;
         padding-left: 0;
         padding-right: 0;
     }
+
     .information {
         order: 2;
         max-width: 100%;
         padding-bottom: 5px;
     }
+
     .outTopic {
         display: block;
     }
+
     .mobileTopic {
         display: block;
     }
+
     .mobileSpace {
         display: block;
     }
+
     .hrLine {
         display: block;
     }
-    .mobile_schedule_time{
+
+    .mobile_schedule_time {
         display: block;
     }
 }
