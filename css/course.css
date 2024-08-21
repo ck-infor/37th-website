@@ -132,12 +132,14 @@ main {
 }
 
 .innerText {
-    font-size: 20px;
+    font-size: 30px;
     color: black;
-    text-align: center;
+    text-align: left;
     margin: 20px;
-    padding: 10px 50px;
+    margin-top:10px;
+    padding: 10px 50px 20px;
     box-sizing: border-box; 
+    line-height: 200%;
 }
 
 .hidden {
@@ -151,8 +153,10 @@ main {
 
 .highLightOuter {
     background-color: none;
-    padding: 5px; /* 增加內邊距以顯示背景顏色 */
+    padding-top: 10px; /* 增加內邊距以顯示背景顏色 */
     display: inline-block; /* 確保背景顏色只影響文字部分 */
+    font-weight: 700;
+    font-size: 50px;
 }
 
 .highLight {
