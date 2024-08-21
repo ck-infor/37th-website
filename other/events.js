@@ -65,7 +65,7 @@ function start() {
 
         var mobile_schedule_time = document.createElement("p");
         mobile_schedule_time.classList.add("mobile_schedule_time");
-        mobile_schedule_time.innerHTML = "活動時間" + timeList[i];
+        mobile_schedule_time.innerHTML =" "+ timeList[i];
         informationContainer.appendChild(mobile_schedule_time);
 
         var time = document.createElement("p");
