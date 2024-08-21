@@ -51,25 +51,32 @@ header {
 }
 
 .innerText {
-    font-size: 20px;
+    font-size: 35px;
     color: black;
     text-align: left;
     margin: 20px;
     padding: 10px 50px;
     box-sizing: border-box; 
+    font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
+    font-weight: 450px;
+    line-height: 200%;
 }
 
 .topic {
     font-size: 30px;
-    color: black;
-    text-align: center;
+    padding:20px;
+    padding-left:50px;
 }
 
 .highLight {
-    background-color: gold;
-    color: black;
-    padding: 5px; /* 增加內邊距以顯示背景顏色 */
+    background-color: none;
+    color: white;
+    padding: 10px; /* 增加內邊距以顯示背景顏色 */
     display: inline-block; /* 確保背景顏色只影響文字部分 */
+    font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    text-align: left;
 }
 
 .hidden {
@@ -101,5 +108,12 @@ header {
     }
     header {
         padding: 0;
+    }
+    .highLight{
+        font-size: 75px;
+        font-weight: 600;
+    }
+    .innerText{
+        font-size: 30px;
     }
 }

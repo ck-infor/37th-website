@@ -335,7 +335,8 @@ footer img{
     color: white;
     text-align: left;
     width: fit-content;
-    margin-left: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     font-weight: 700;
     font-family: "JetBrains Mono", "Noto Sans TC", monospace, sans-serif;
     line-height: 150%;
@@ -408,7 +409,8 @@ hr {
     font-size: 20px;
     color: white;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 10px;
     padding: 10px 20px;
     box-sizing: border-box; 

@@ -5,36 +5,20 @@ function start() {
     var introTopic = document.createElement("p");
     introTopic.classList.add("topic");
     var topicSpan = document.createElement("span");
-    topicSpan.innerHTML = "建中資訊社";
+    topicSpan.innerHTML = "建中<br>資訊社<br>社團簡史";
     topicSpan.classList.add("highLight");
     topicSpan.classList.add("hidden");
-    topicSpan.style.backgroundColor = "gold";
+    topicSpan.style.backgroundColor = "none";
     introTopic.appendChild(topicSpan);
 
     var introText = document.createElement("p");
     introText.id = "IntroText";
     introText.classList.add("innerText");
+    introText.style.color = "white";
     intro.appendChild(introTopic);
     intro.appendChild(introText);
 
-    var izcc = document.createElement("div");
-    var izccTopic = document.createElement("p");
-    izccTopic.classList.add("topic");
-    var izccSpan = document.createElement("span");
-    izccSpan.innerHTML = "IZCC";
-    izccSpan.classList.add("highLight");
-    izccSpan.classList.add("hidden");
-    izccSpan.style.backgroundColor = "gold";
-    izccTopic.appendChild(izccSpan);
-
-    var izccText = document.createElement("p");
-    izccText.id = "izccText";
-    izccText.classList.add("innerText");
-    izcc.appendChild(izccTopic);
-    izcc.appendChild(izccText);
-
     paragraph.appendChild(intro);
-    paragraph.appendChild(izcc);
 
     setInterval(check, 20);
 }
@@ -44,13 +28,7 @@ var observer = new IntersectionObserver(function(entries) {
         if (entry.isIntersecting) {
             if(entry.target.id == "IntroText") {
                 if(entry.target.className.search("runed") == -1) {
-                    typeWriter("建中資訊社是一個專注於電腦和資訊科技的學術性社團。在這裡，你可以學習程式設計、演算法、網頁開發、人工智慧等科技領域的課程。除此之外，你還可以認識許多學術力一流的同儕，並與友校的朋友交流。", "IntroText", 100);
-                    entry.target.classList.add("runed");
-                }
-            }
-            else if(entry.target.id == "izccText") {
-                if(entry.target.className.search("runed") == -1) {
-                    typeWriter("IZCC是建中資訊 (INFOR)、 中山資研 (ZSISC)、成功電研 (CKCSC)與景美電資 (CMIOC) 的合稱。IZCC由一群熱愛資訊的人們組成。放學會舉辦課程一同學習，也會共同舉辦活動，像是暑訓、秋遊、耶誕晚會等······。", "izccText", 100);
+                    typeWriter("建國中學資訊社成立於1990年代，是該校學生對於資訊科技與程式設計興趣的匯聚點。最初，資訊社主要提供基本的電腦操作與程式設計入門教學，隨著科技的進步與學生需求的變化，逐漸擴展至更為進階的領域，如演算法、人工智慧、網頁設計等。社團成員經常參加校內外的程式設計競賽並屢獲佳績，為學校贏得許多榮譽。資訊社亦積極推動校內的資訊教育，透過舉辦工作坊和講座，培養更多學生對資訊科技的興趣與能力。至今，建國中學資訊社已成為校內最具代表性的學生社團之一，持續在資訊領域中發揮影響力。", "IntroText", 100);
                     entry.target.classList.add("runed");
                 }
             }

@@ -71,19 +71,6 @@ main {
     width: calc(100% - 100px); /* 扣除左右邊距 */
     box-sizing: border-box; /* 確保內邊距計算在內 */
 }
-.club_courses .myimg{
-    display: flex;
-    flex: 1;
-    max-width: 45%;
-    height: min-content;
-    order: 2;
-    margin-top: auto;
-    margin-bottom: 50px;
-    margin-right: 20px;
-    display: block;
-    justify-content: end;
-    object-fit: scale-down;
-}
 
 .content .myimg {
     flex: 1;
@@ -126,23 +113,18 @@ main {
     border: 15px;
     border-radius: 30px;
     background-clip: padding-box;
+    width: fit-content;
     max-height: auto;
     margin-top: 100px;
     margin-bottom: 100px;
-    background-color: transparent;    
+    background-color: #d4d4d4;    
     color:black;
-    width:50%;
 }
 
 .topic {
-    font-size: 80px;
+    font-size: 30px;
     color: black;
-    text-align: left;
-    font-family: "JetBrains Mono", "Noto Sans TC", sans-serif, monospace;
-    display: flex;
-    margin: 20px;
-    padding: 10px 50px;
-    background-color: #d4d4d4;
+    text-align: center;
 }
 
 .noMargin {
@@ -154,11 +136,10 @@ main {
     color: black;
     text-align: left;
     margin: 20px;
-    padding: 10px 50px 50px 50px;
+    margin-top:10px;
+    padding: 10px 50px 20px;
     box-sizing: border-box; 
     line-height: 200%;
-    display: flex;
-    background-color: #d4d4d4;
 }
 
 .hidden {
@@ -172,8 +153,10 @@ main {
 
 .highLightOuter {
     background-color: none;
-    padding: 5px; /* 增加內邊距以顯示背景顏色 */
+    padding-top: 10px; /* 增加內邊距以顯示背景顏色 */
     display: inline-block; /* 確保背景顏色只影響文字部分 */
+    font-weight: 700;
+    font-size: 50px;
 }
 
 .highLight {
@@ -204,12 +187,12 @@ main {
 
 .lesson-card {
     background: #d4d4d4;
-    height: 149px;
+    /* background記得改 */
+    height: 170px;
     margin: 10px;
-    width: 10%;
+    width: 30%;
     min-width: 300px;
-    display: inline-flex;
-    flex-direction: column;
+    display: flex;
     position: relative;
     border-radius: 20px;
     overflow: hidden;
