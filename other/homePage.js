@@ -66,7 +66,7 @@ function start() {
     var clubennameList = ["INFOR", "ZSISC", "CKCSC", "CMIOC"]
     var clublogoList =["./other/photos/clublogo/infor.png", "./other/photos/clublogo/zsisc.png", "./other/photos/clublogo/ckcsc.png", "./other/photos/clublogo/cmioc.png"]
     var introduceTextList = ["建中資訊社是一個專注於電腦和資訊科技的學術性社團。在這裡，你可以學習程式設計、演算法、網頁開發、人工智慧等科技領域的課程。除此之外，你還可以認識許多學術力一流的同儕，並與友校的朋友交流。",
-    "IZCC是建中資訊 (INFOR)、 中山資研 (ZSISC)、成功電研 (CKCSC)與景美電資 (CMIOC) 的合稱。IZCC由一群熱愛資訊的人們組成。放學會舉辦課程一同學習，也會共同舉辦活動，像是暑訓、秋遊、耶誕晚會等······。"];
+    "IZCC是建中資訊 (INFOR)、 中山資研 (ZSISC)、成功電研 (CKCSC)與景美電資 (CMIOC) 的合稱。IZCC由一群熱愛資訊的人們組成。放學會舉辦課程一同學習，也會共同舉辦活動，像是暑訓、秋遊、耶誕晚會等......"];
     var paragraph = document.getElementById("introduction");
 
     for(var i = 0; i < topicList.length; i++) {
