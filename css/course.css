@@ -124,11 +124,16 @@ main {
 .topic {
     font-size: 30px;
     color: black;
-    text-align: center;
 }
 
 .noMargin {
     margin: 0 0 0 0;
+}
+
+.courses_name{
+    font-size: 20px;
+    font-family: "JetBrains Mono", "Noto Sans TC", sans-serif, monospace;
+    font-weight: 200px;
 }
 
 .innerText {
@@ -160,7 +165,6 @@ main {
 }
 
 .highLight {
-    padding-left:20px;
     background-color: none;
     color: black;
     display: inline-block; /* 確保背景顏色只影響文字部分 */
@@ -188,7 +192,7 @@ main {
 .lesson-card {
     background: #d4d4d4;
     /* background記得改 */
-    height: 170px;
+    height: 250px;
     margin: 10px;
     width: 30%;
     min-width: 300px;
@@ -196,6 +200,7 @@ main {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
+    text-align: center;
     transition: all 0.3s ease-in-out;
 }
 
@@ -208,9 +213,10 @@ main {
 }
 
 .lesson-card-text {
-    position: absolute;
-    top: 20px;
-    left: 85px;
+    margin-left: 15%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
 }
 
 .lesson-card-button {
@@ -221,9 +227,11 @@ main {
 
 .lesson-card-text hr{
     margin:0px;
-    border-radius: 50px;
+    border-radius: 100px;
+    margin-top:10px;
+    margin-bottom: 10px;
     border: solid;
-    margin-left: 18.5px;
+    width:150px;
 }
 
 .info-button {
