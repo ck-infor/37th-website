@@ -558,10 +558,9 @@ hr {
         text-align: center;
     }
     .introText{
-        width: 80%;
+        width: 90%;
         text-align: left;
         margin: 0;
-        margin-right: 5%;
         margin-left: 5%;
     }
 }
