@@ -138,7 +138,7 @@ var observer = new IntersectionObserver(function(entries) {
         if (entry.isIntersecting) {
             if(String(entry.target.id).search("^intro") != -1) {
                 if(entry.target.classList[1] != "runed") {
-                    typeWriter(introList[String(entry.target.id)[String(entry.target.id).length - 1]], String(entry.target.id), 100);
+                    typeWriter(introList[String(entry.target.id)[String(entry.target.id).length - 1]], String(entry.target.id), 80);
                     entry.target.classList.add("runed");
                 }
             }
