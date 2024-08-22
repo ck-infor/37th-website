@@ -1,11 +1,11 @@
-var aftCourseList = ["星期一課程", "星期二課程", "星期三課程", "星期四課程", "星期五課程"];
+var aftCourseList = ["演算法", "微積分+LaTeX", "Markdown語法", "電繪", "網頁前端"];
 var week = ["星期一", "星期二", "星期三", "星期四", "星期五"];
 var aftCourseIntro = [
     "這門課程將帶你深入理解核心的演算法與資料結構，從基礎到進階，涵蓋排序、遞迴、動態規劃、圖論、資料結構等更多進階的主題。", "這門課會讓你了解什麼是微積分，以及微積分的計算方式和相關數學技巧，同時也會教你如何使用Latex，這不僅能把複雜數學公式呈現，也能利於文件排版及套件使用", "這是一趟輕鬆的MarkDown課程，這堂課會教你如何製作筆記和一些適合用在discord的語法", "是否因為不會美編、沒有美感導致自己的網頁看起來不盡人意？那麼這節課將會教你最基礎的美宣，從畫icon 到畫人體，讓你的程式作品看起來更加完美！", "本堂課程將會教導如何使用 HTML、CSS、Javascript 進行網頁前端介面與互動的開發，課程將會偏向使用Javascript 設計網頁遊戲，適合剛接觸資訊科技的新手入門。"
 ]
 var aftCoursePhotos = [
-    "./photos/Java_logo.png", "./photos/Java_logo.png", "./photos/Java_logo.png", 
-    "./photos/Java_logo.png", "./photos/Java_logo.png"
+    "./photos/courses/algorithm.png", "./photos/courses/calculus.png", "./photos/courses/markdown.jpg", 
+    "./photos/courses/computer-graphics.png", "./photos/courses/front-end.jpeg"
 ]
 
 function start() {
