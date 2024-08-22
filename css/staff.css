@@ -52,6 +52,8 @@ main {
 
 .content {
     display: flex;
+    justify-items: center;
+    align-items: center;
     /* text-align: center; */
     margin: 20px 0;
     padding: 10px 50px; /* 設置內邊距 */
@@ -62,7 +64,7 @@ main {
 .content .myimg {
     flex: 1;
     max-width: 50%;
-    height: auto;
+    height: fit-content;
     border-radius: 30px;
     object-fit: scale-down;
     /* transition: transform 1s ease-out, opacity 1s ease-out; 
