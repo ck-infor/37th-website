@@ -22,7 +22,7 @@ body {
     height: min-content;
     order: 2;
     margin-top: auto;
-    margin-bottom: 50px;
+    margin-bottom: auto;
     margin-right: 20px;
     display: block;
     justify-content: end;
