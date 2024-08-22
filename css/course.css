@@ -250,6 +250,51 @@ main {
     background-color: #c586c0;
 }
 
+.msgPhoto {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.msgText {
+    font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 200%;
+    display: block;
+}
+
+.msgBox {
+    align-items: center;
+    justify-items: center;
+    border-radius: 30px;
+}
+
+.msgBtn {
+    background-color: #ed6f18;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.msgBtn:hover {
+    opacity: 1;
+}
+
 @media (max-width: 1008px) and (min-width: 689px) {
     .lesson-card {
         width: 45%;
