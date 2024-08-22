@@ -23,7 +23,7 @@ function start() {
     
         var signList = ["活動已結束", "活動已結束", "尚未開放報名", "尚未開放報名", "尚未開放報名", "尚未開放報名", "尚未開放報名", "尚未開放報名"]
     
-        var events_color=["#F8EDE3", "#DFD3C3", "#d4d4d4", "#dcdcaa", "#FFF8DB", "#D0B8A8", "#DFD3C3", "#F8EDE3"]
+        var events_color=["#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E"]
 
     for(var i = 0; i < topicList.length; i++) {
         var container = document.createElement("div");
@@ -85,18 +85,18 @@ function start() {
             if(signList[i].search("^活動已結束$") == 0) {
                 var span = document.createElement("span");
                 span.classList.add("register_status");
-                span.style.backgroundColor = "#CE9178";
+                span.style.backgroundColor = "#3C3D37";
                 span.style.color = "white";
-                span.style.fontSize = "20px";
-                span.innerHTML = signList[i];
+                span.style.fontSize = "80%";
+                span.innerHTML = signList[i];8
                 sign.appendChild(span);
             }
             else if(signList[i].search("^報名已結束$") == 0) {
                 var span = document.createElement("span");
                 span.classList.add("register_status");
-                span.style.backgroundColor = "#6482AD";
+                span.style.backgroundColor = "white";
                 span.style.color = "white";
-                span.style.fontSize = "20px";
+                span.style.fontSize = "80%";
                 span.innerHTML = signList[i];
                 sign.appendChild(span);
             }
@@ -105,7 +105,7 @@ function start() {
                 span.classList.add("register_status");
                 span.style.backgroundColor = "#3C3D37";
                 span.style.color = "white";
-                span.style.fontSize = "20px";
+                span.style.fontSize = "80%";
                 span.innerHTML = signList[i];
                 sign.appendChild(span);
             }

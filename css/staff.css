@@ -53,7 +53,6 @@ main {
 .content {
     display: flex;
     /* text-align: center; */
-    align-items: center;
     margin: 20px 0;
     padding: 10px 50px; /* 設置內邊距 */
     /* width: calc(100% - 100px); 扣除左右邊距 */
@@ -85,6 +84,12 @@ main {
     opacity: 1;
 } */
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .content div {
     flex: 1;
     padding: 10px;
@@ -100,11 +105,12 @@ main {
 .paragraph h2{
     line-height: 250%;
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .paragraph p{
-    font-weight: 400;
+    font-weight: 350;
+    line-height: 200%;
 }
 
 .paragraph .hidden {
@@ -141,6 +147,7 @@ main {
 .textContainer {
     text-align: left;
     max-width: 100%;
+    padding: 0%;
 }
 
 .hidden {
@@ -209,6 +216,7 @@ main {
     }
     .content {
         flex-flow: column;
+        padding:10px;
     }
     .content .textContainer {
         order: 2;
@@ -221,5 +229,8 @@ main {
     }
     header {
         padding: 0;
+    }
+    .paragraph{
+        padding:5px;
     }
 }

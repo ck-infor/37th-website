@@ -102,8 +102,8 @@ main {
     max-height: auto;
     margin-top: 100px;
     margin-bottom: 100px;
-    background-color: #d4d4d4;    
-    color:black;
+    background-color: #1E201E;    
+    color:white;
 }
 
 .afterschool_courses{
@@ -117,13 +117,13 @@ main {
     max-height: auto;
     margin-top: 100px;
     margin-bottom: 100px;
-    background-color: #d4d4d4;    
+    background-color: #1E201E;    
     color:black;
 }
 
 .topic {
     font-size: 30px;
-    color: black;
+    color: white;
 }
 
 .noMargin {
@@ -138,7 +138,7 @@ main {
 
 .innerText {
     font-size: 30px;
-    color: black;
+    color: white;
     text-align: left;
     margin: 20px;
     margin-top:10px;
@@ -303,7 +303,8 @@ main {
 
 @media (max-width: 688px) {
     .lesson-card {
-        width: 95%;
+        padding: 10px 10px;
+        font-size: 20px;
     }
     .computerNav {
         display: none;
@@ -321,6 +322,10 @@ main {
         margin: 50px 20px;
     }
     .innerText {
-        padding: 10px 30px;
+        padding: 10px 10px;
+        font-size: 20px;
+    }
+    .topic{
+        font-size: 27px;
     }
 }
