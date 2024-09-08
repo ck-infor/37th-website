@@ -4,7 +4,6 @@ body {
     background-color: #000000;
 }
 
-
 .topnav a {
     color: white;
     padding: 14px 16px;
@@ -42,6 +41,12 @@ main {
 .logo-container {
     text-align: center;
     margin-top: 0; /* 去除任何頂部邊距 */
+}
+
+.topic {
+    font-size: 30px;
+    padding:20px;
+    padding-left:50px;
 }
 
 .logo-container img {

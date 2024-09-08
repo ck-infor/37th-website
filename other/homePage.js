@@ -62,7 +62,7 @@ function menu() {
 
 function start() {
     var topicList = ["建國中學資訊社", "IZCC"];
-    var clubchnameList=["建國中學資訊社", "中山女高資訊研究社", "成功高中電子計算機研習社", "景美女中資訊研究社"]
+    var clubchnameList=["建國中學資訊社", "中山女高資訊研究社", "成功高中電子計算機研習社", "景美女中電腦資訊社"]
     var clubennameList = ["INFOR", "ZSISC", "CKCSC", "CMIOC"]
     var clublogoList =["./other/photos/clublogo/infor.png", "./other/photos/clublogo/zsisc.png", "./other/photos/clublogo/ckcsc.png", "./other/photos/clublogo/cmioc.png"]
     var introduceTextList = ["建中資訊社是一個專注於電腦和資訊科技的學術性社團。在這裡，你可以學習程式設計、演算法、網頁開發、人工智慧等科技領域的課程。除此之外，你還可以認識許多學術力一流的同儕，並與友校的朋友交流。",

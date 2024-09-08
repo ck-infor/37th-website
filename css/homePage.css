@@ -186,7 +186,7 @@ main {
 
 .upper_footer{
     margin-top: 20px;
-    background-color: rgb(30, 24, 24);
+    background-color: rgb(255, 255, 255);
     /* position: fixed; */
     bottom: 50px;
     display: flex;
@@ -249,7 +249,7 @@ footer img{
 }
 
 .bottom_footer{
-    background-color: rgb(30, 24, 24);
+    background-color: #1E201E;
     /* margin-top: 10px; */
     border-top: 1px solid rgb(223, 222, 222);
     /* position: fixed; */
@@ -562,6 +562,9 @@ hr {
         text-align: left;
         margin: 0;
         margin-left: 5%;
+    }
+    .at{
+        display: none;
     }
 }
 

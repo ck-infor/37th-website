@@ -21,6 +21,7 @@ function start() {
     ]
 
     var photourl=["../other/photos/staff/社長.jpg", "../other/photos/staff/副社長.jpg", "../other/photos/staff/外交長.jpg",  "../other/photos/staff/學術長.png", "../other/photos/staff/學術.jpg", "../other/photos/staff/行政長.jpg", "../other/photos/staff/行政.jpg", "../other/photos/staff/總務.jpg", "../other/photos/staff/美宣.jpg", "../other/photos/staff/美宣!.jpg"]
+
     for (var i = 0; i < nameList.length; i++) {
         var target = document.getElementById("pack" + i);
         var element = document.createElement("div");
