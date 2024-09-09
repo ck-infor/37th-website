@@ -116,6 +116,45 @@ function start() {
         paragraph.appendChild(container);                
     }       
     setInterval(check(), 50);
+
+    //announcement
+    if(sessionStorage.getItem("visited") != "true") {
+        $.MessageBox({
+            buttonDone : {
+                closeBtn : {
+                    text : "關閉",
+                    keyCode : 13,
+                    customClass : "msgBtn"
+                }
+            },
+            buttonFail : {
+                goBtn : {
+                    text : "去看看",
+                    customClass : "msgBtn",
+                }
+            },
+            title : "最新公告",
+            message : "<p class=\"msgText\">我們調換了星期三、四放課的順序。(Sep. 9, 2024)</p>",
+            input : {
+                checkbox : {
+                    type : "checkbox",
+                    title : "不再顯示",
+                    class : "msgCheckBox"
+                }
+            },
+            customClass : "msgBox",
+            top : "auto"
+        }).done((data) => {
+            if(data["checkbox"]) {
+                sessionStorage.setItem("visited", true);
+            }
+        }).fail((data) => {
+            if(data["checkbox"]) {
+                sessionStorage.setItem("visited", true);
+            }
+            window.location.href = window.location.href.replace("index.html", "other/course.html");
+        });
+    }
 }
 
 var observer = new IntersectionObserver(function(entries) {
