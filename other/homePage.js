@@ -152,7 +152,12 @@ function start() {
             if(data["checkbox"]) {
                 sessionStorage.setItem("visited", true);
             }
-            window.location.href = window.location.href.replace("index.html", "other/course.html");
+            if(window.location.href.search("index.html") != -1) {
+                window.location.href = window.location.href.replace("index.html", "other/course.html");
+            }
+            else {
+                window.location.href = window.location.href + "/other/course.html";
+            }
         });
     }
 }
