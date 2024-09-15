@@ -134,7 +134,7 @@ function start() {
                 }
             },
             title : "最新公告",
-            message : "<p class=\"msgText\">我們調換了星期三、四放課的順序。(Sep. 9, 2024)</p>",
+            message : "<p class=\"msgText\">我們調換了星期二、四放課的順序。(Sep. 16, 2024)</p>",
             input : {
                 checkbox : {
                     type : "checkbox",
