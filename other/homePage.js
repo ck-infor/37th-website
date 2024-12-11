@@ -153,10 +153,10 @@ function start() {
                 sessionStorage.setItem("visited", true);
             }
             if(window.location.href.search("index.html") != -1) {
-                window.location.href = window.location.href.replace("index.html", "other/course.html");
+                window.location.href = window.location.href.replace("index.html", "other/events.html");
             }
             else {
-                window.location.href = window.location.href + "/other/course.html";
+                window.location.href = window.location.href + "/other/events.html";
             }
         });
     }
