@@ -10,7 +10,7 @@ var introList = ["我們會在茶會與來自全台各地的友社進行交流�
 function start() {
     var target = document.getElementById("event");
     var topicList = ["茶會", "暑訓", "迎新", "社慶", "秋遊", "耶誕晚會", "寒訓", "春遊"];
-    var timeList = ["2024.7.8 ~ 2024.7.9", "2024.8.5 ~ 2024.8.11", "2024.10.27", "2024.11.8", "2024.12.8", "2024.12.20", "尚未決定", "尚未決定"];
+    var timeList = ["2024.7.8 ~ 2024.7.9", "2024.8.5 ~ 2024.8.11", "2024.10.27", "2024.11.8", "2024.12.8", "2024.12.20", "2025.2.3 ~ 2025.2.9", "尚未決定"];
     var photoList = [
         "../other/photos/events/teaparty.jpg",
         "../other/photos/events/summercamp.jpeg",
@@ -21,9 +21,20 @@ function start() {
         "../other/photos/events/wintercamp.jpg",
         "../other/photos/events/spring.jpg"];
     
-        var signList = ["活動已結束", "活動已結束", "活動已結束", "活動已結束", "活動已結束", "報名已結束", "尚未開放報名", "尚未開放報名"]
+        var signList = ["活動已結束", "活動已結束", "活動已結束", "活動已結束", "活動已結束", "報名已結束", "https://docs.google.com/forms/d/e/1FAIpQLScIluDRxOkdDq7rPvl4LrxaHzKaXcKUdfLx2TBiadOMe7yahw/viewform?pli=1", "尚未開放報名"]
     
-        var events_color=["#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E"]
+        var events_color=["#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E"];
+
+        var eventsPhotoLinkList = [
+            "https://drive.google.com/drive/folders/1RUyldAlMYfadIqFgUQFDJeAlEKbExbhH",
+            "https://drive.google.com/drive/folders/1uUHtlaKrMc6peTmLEnrHQQC5kT-ZQmV6",
+            "https://drive.google.com/drive/folders/1uwqSa3NfSJp_YeB2nJGmfHdymcsYCoQ5?usp=drive_link",
+            "https://drive.google.com/drive/folders/1mxKKRfeCj-Mty5cwfvJDHOT31SeeZoNB",
+            "https://drive.google.com/drive/folders/1g4lKrqkfWePNQJ6R0bF5TTmIiFQqdxL2?usp=sharing",
+            "https://drive.google.com/drive/folders/1LLdRw2iVCXfre4DkCRJQXR7KfhEbDAPE?usp=sharing",
+            "",
+            ""
+        ];
 
     for(var i = 0; i < topicList.length; i++) {
         var container = document.createElement("div");
@@ -75,7 +86,6 @@ function start() {
 
         var introText = document.createElement("p");
         introText.classList.add("innerText");
-        introText.style.marginBottom = "20px"
         introText.id = "intro" + i;
         informationContainer.appendChild(introText);
 
@@ -88,7 +98,7 @@ function start() {
                 span.style.backgroundColor = "#3C3D37";
                 span.style.color = "white";
                 span.style.fontSize = "80%";
-                span.innerHTML = signList[i];8
+                span.innerHTML = signList[i];
                 sign.appendChild(span);
             }
             else if(signList[i].search("^報名已結束$") == 0) {
@@ -111,17 +121,32 @@ function start() {
             }
         }
         else {
+            var link = document.createElement("a");
             var span = document.createElement("span");
             span.classList.add("register_status");
-            span.style.backgroundColor = "#9DC5A8";
             span.style.color = "white";
-            var link = document.createElement("a");
-            link.innerHTML = "點我前往報名";
+            link.style.fontSize = "80%";
+            link.target = "_blank";
+            span.innerHTML = "點我前往報名";
             link.href = signList[i];
             link.classList.add("link");
-            span.appendChild(link);
-            sign.appendChild(span);
+            link.appendChild(span);
+            sign.appendChild(link);
         }
+
+        // if(eventsPhotoLinkList[i].search("^https") != -1) {
+        //     var link = document.createElement("a");
+        //     var span = document.createElement("span");
+        //     span.classList.add("register_status");
+        //     link.style.fontSize = "80%";
+        //     link.target = "_blank";
+        //     span.innerHTML = "活動照片";
+        //     link.href = eventsPhotoLinkList[i];
+        //     link.classList.add("link");
+        //     link.appendChild(span);
+        //     sign.appendChild(link);
+        // }
+
         informationContainer.appendChild(sign);
         innerTextContainer.appendChild(photo);
         innerTextContainer.appendChild(informationContainer);
