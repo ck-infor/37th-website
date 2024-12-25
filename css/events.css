@@ -64,19 +64,21 @@ body {
 
 .register_status {
     width: 220px;
-    height: 50px;
+    height: fit-content;
     font-family: "Noto Sans TC", "JetBrains Mono", monospace, sans-serif;
     font-optical-sizing: auto;
     font-weight: 450;
     font-style: normal;
-    color: rgb(120, 115, 115);
+    background-color: #3C3D37;
+    color: white;
     box-sizing: border-box;
     display: block;
     border-radius: 20px;
     text-align: center;
-    padding-top: 5px;
     margin-left: 7%;
     margin-right: 7%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .event_schedule_time {
@@ -170,6 +172,25 @@ body {
     width: 100%;
     display: none;
     height: 30px;
+}
+
+.link .register_status {
+    color : white;
+    background-color: #3C3D37;
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link .register_status:hover {
+    color :white;
+    background-color: #3E5879;
+}
+
+.link .register_status:visited {
+    background-color: #3E5879;
 }
 
 .mobile_schedule_time {
@@ -282,5 +303,10 @@ body {
 
     .mobile_schedule_time {
         display: block;
+    }
+
+    .register_status {
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
     }
 }
