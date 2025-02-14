@@ -21,7 +21,7 @@ function start() {
         "../other/photos/events/wintercamp.jpg",
         "../other/photos/events/spring.jpg"];
     
-        var signList = ["活動已結束", "活動已結束", "活動已結束", "活動已結束", "活動已結束", "報名已結束", "https://docs.google.com/forms/d/e/1FAIpQLScIluDRxOkdDq7rPvl4LrxaHzKaXcKUdfLx2TBiadOMe7yahw/viewform?pli=1", "尚未開放報名"]
+        var signList = ["活動已結束", "活動已結束", "活動已結束", "活動已結束", "活動已結束", "活動已結束", "活動已結束", "尚未開放報名"]
     
         var events_color=["#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E"];
 
