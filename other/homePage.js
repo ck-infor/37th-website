@@ -118,6 +118,7 @@ function start() {
     setInterval(check(), 50);
 
     //announcement
+    /*
     if(sessionStorage.getItem("visited") != "true") {
         $.MessageBox({
             buttonDone : {
@@ -159,7 +160,7 @@ function start() {
                 window.location.href = window.location.href + "/other/events.html";
             }
         });
-    }
+    }*/
 }
 
 var observer = new IntersectionObserver(function(entries) {
