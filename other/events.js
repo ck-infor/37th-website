@@ -10,18 +10,18 @@ var introList = ["我們會在茶會與來自全台各地的友社進行交流�
 function start() {
     var target = document.getElementById("event");
     var topicList = ["茶會", "暑訓", "迎新", "社慶", "秋遊", "耶誕晚會", "寒訓", "春遊"];
-    var timeList = ["2024.7.8 ~ 2024.7.9", "2024.8.5 ~ 2024.8.11", "2024.10.27", "2024.11.8", "2024.12.8", "2024.12.20", "2025.2.3 ~ 2025.2.9", "尚未決定"];
+    var timeList = ["2024.7.8 ~ 2024.7.9", "2024.8.5 ~ 2024.8.11", "2024.10.27", "2024.11.8", "2024.12.8", "2024.12.20", "2025.2.3 ~ 2025.2.9", "2025.3.30"];
     var photoList = [
         "../other/photos/events/teaparty.jpg",
         "../other/photos/events/summercamp.jpeg",
         "../other/photos/events/welcome.JPG",
         "../other/photos/events/party.jpg",
         "../other/photos/events/autumn.jpg",
-        "../other/photos/events/christmas.jpg",
+        "../other/photos/events/christmas.JPG",
         "../other/photos/events/wintercamp.jpg",
         "../other/photos/events/spring.jpg"];
     
-        var signList = ["活動已結束", "活動已結束", "活動已結束", "活動已結束", "活動已結束", "活動已結束", "活動已結束", "尚未開放報名"]
+        var signList = ["活動已結束", "活動已結束", "活動已結束", "活動已結束", "活動已結束", "活動已結束", "活動已結束", "活動已結束"]
     
         var events_color=["#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E", "#1E201E"];
 
