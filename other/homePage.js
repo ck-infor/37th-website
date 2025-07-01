@@ -134,7 +134,7 @@ function start() {
                 }
             },
             title : "最新公告",
-            message : "<p class=\"msgText\">現在可以報名寒訓啦！(Dec. 25, 2024)</p>",
+            message : "<p class=\"msgText\">我們退休啦！到我們學弟的社網看看嗎？(Jul. 1, 2025)</p>",
             input : {
                 checkbox : {
                     type : "checkbox",
@@ -152,12 +152,13 @@ function start() {
             if(data["checkbox"]) {
                 sessionStorage.setItem("visited", true);
             }
-            if(window.location.href.search("index.html") != -1) {
+            /*if(window.location.href.search("index.html") != -1) {
                 window.location.href = window.location.href.replace("index.html", "other/events.html");
             }
             else {
                 window.location.href = window.location.href + "/other/events.html";
-            }
+            }*/
+            window.location.href = "https://38.infor.org";
         });
     }
 }
