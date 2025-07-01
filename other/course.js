@@ -1,11 +1,15 @@
-var aftCourseList = ["演算法", "微積分+LaTeX", "電繪", "Markdown語法", "網頁前端"];
+var aftCourseList = ["伺服器維運", "機器學習", "Flask", "演算法", "R語言"];
 var week = ["星期一", "星期二", "星期三", "星期四", "星期五"];
 var aftCourseIntro = [
-    "這門課程將帶你深入理解核心的演算法與資料結構，從基礎到進階，涵蓋排序、遞迴、動態規劃、圖論、資料結構等更多進階的主題。", "這門課會讓你了解什麼是微積分，以及微積分的計算方式和相關數學技巧，同時也會教你如何使用Latex，這不僅能把複雜數學公式呈現，也能利於文件排版及套件使用", "是否因為不會美編、沒有美感導致自己的網頁看起來不盡人意？那麼這節課將會教你最基礎的美宣，從畫icon 到畫人體，讓你的程式作品看起來更加完美！", "這是一趟輕鬆的MarkDown課程，這堂課會教你如何製作筆記和一些適合用在discord的語法", "本堂課程將會教導如何使用 HTML、CSS、Javascript 進行網頁前端介面與互動的開發，課程將會偏向使用Javascript 設計網頁遊戲，適合剛接觸資訊科技的新手入門。"
+    "在這個課程中，我們將帶你從零開始學習伺服器維運的核心技能，讓你能夠架設、管理與維護各類型的伺服器環境。本課程涵蓋 Linux 系統操作、SSH 遠端管理、Docker 容器化技術，以及 基礎網路設定 等關鍵知識，幫助你建立穩定且高效的伺服器架構。", 
+    "時代更迭，現今社會中已脫離不了人工智慧帶來的便利性，從近期炙手可熱的大型語言模型可見，人工智慧的發展與其重要性是遠遠大於以往。本課程將會從底層原理，帶領大家從零開始實作出屬於自己的神經網路，並循序漸進進行更多基於機器學習下的應用實作，以及大語言模型背後的架構原理解析與實際運用時之調整技術。", 
+    "這是一門針對 Flask 的Web 開發課程，在這門課程中，我們將學習如何建立一個具有完整功能的 Web 應用，包括 動態網頁渲染、用戶認證、實時通信、資料庫整合 和 模組化設計。課程將通過實作案例來講解每一個概念，並為你提供完成真正 Web 應用所需的技能。", 
+    "這門課程將帶你深入理解核心的演算法與資料結構，從基礎到進階，涵蓋排序、遞迴、動態規劃、圖論、資料結構等更多進階的主題。<br></br><br></br>下學期課程將與建北電資合作同時開兩堂課：基礎班 & 進階班<br></br><br></br>基礎班：<br></br>大致與上學期課程相同，從 C++ 語法到全部 APCS 實作考試範圍，涵蓋排序、遞迴、動態規劃、圖論等多個教學主題，<br></br>歡迎下學期想開始學 C++ 的同學們來聽課。<br></br><br></br>進階班：<br></br>如果你上學期有上演算法課程，想要學習更進階的課程內容，我們將教學各式競賽常用資料結構、樹論、進階圖論等多個進階課程主題。", 
+    "此堂課程逐步將學習掌握 R 語言的核心概念與應用。課程內容涵蓋基礎語法、數據處理、視覺化與統計分析等，並透過實作練習，培養學生運用 R 進行數據探索的能力。課堂中將學到讀取與整理數據進行基礎數據分析，為未來的學術研究與專題報告打下基礎。"
 ]
 var aftCoursePhotos = [
-    "./photos/courses/algorithm.png", "./photos/courses/calculus.png", "./photos/courses/computer-graphics.png", 
-    "./photos/courses/markdown.jpg", "./photos/courses/front-end.jpeg"
+    "./photos/courses/server.png", "./photos/courses/AI.webp", "./photos/courses/Flask_logo.svg", 
+    "./photos/courses/algorithm.png", "./photos/courses/R_language.webp"
 ]
 
 function start() {
@@ -22,7 +26,7 @@ function start() {
     paragraph1.appendChild(course);
 
     var introduceText = document.createElement("p");
-    introduceText.innerHTML = "社課是在每個禮拜五下午的第一堂課，所有社員皆需要來參加，我們的上課地點在資源大樓(夢紅樓旁)三樓的電腦教室二，會有專業的講師在社課中教授一些基礎的程式相關知識，即使之前鮮少接觸程式，也可以在社課中快速掌握相關概念！我們這學期會在社課中教學的內容主要有Python基礎語法、基礎應用、機器學習等多元課程，以及最後留幾堂課的時間讓社員們進行成果發表，互相交流、切磋！<br><br> 社課<br>Python(暫定上學期)<br>課程規劃：  <br> 一段前：基礎語法  <br>二段前：python應用  <br>三段前：成發準備<br><br>Javascript(暫定下學期)";
+    introduceText.innerHTML = "社課是在每個禮拜五下午的第一堂課，所有社員皆需要來參加，我們的上課地點在資源大樓(夢紅樓旁)三樓的電腦教室二，會有專業的講師在社課中教授一些基礎的程式相關知識，即使之前鮮少接觸程式，也可以在社課中快速掌握相關概念！我們這學期會在社課中教學的內容主要有Python基礎語法、基礎應用、機器學習等多元課程，以及最後留幾堂課的時間讓社員們進行成果發表，互相交流、切磋！<br><br> 社課<br>JavaScript基礎語法、非典型演算法、單元式小主題";
     introduceText.classList.add("innerText");
     introduceText.classList.add("hidden");
     paragraph1.appendChild(introduceText);
