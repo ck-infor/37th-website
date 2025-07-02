@@ -118,7 +118,6 @@ function start() {
     setInterval(check(), 50);
 
     //announcement
-    /*
     if(sessionStorage.getItem("visited") != "true") {
         $.MessageBox({
             buttonDone : {
@@ -161,7 +160,7 @@ function start() {
             }*/
             window.location.href = "https://38.infor.org";
         });
-    }*/
+    }
 }
 
 var observer = new IntersectionObserver(function(entries) {
